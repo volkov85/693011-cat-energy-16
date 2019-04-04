@@ -5,57 +5,88 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <a class="picture-logo">Кэт энерджи</a>
       <a class="text-logo">Кэт энерджи</a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           Открыть меню
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="form.html">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
-
-    <main class="form-main">
-      <h1 class="form-main__title">Подбор программы</h1>
-
+    <main class="main">
+      <h1 class="main__title">Подбор программы</h1>
       <section class="forms">
-        <!-- placeholder -->
+        <form class="cat-form"  action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="cat-form__about-cat" title="Анкета кота">
+            <legend>Заполните анкету и мы подберем программу питания для вашего кота</legend>
+            <label class="form-label" for="textfield-name">Имя:<sup>*</sup></label>
+            <input class="form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
+            <label class="form-label" for="textfield-weight">Вес (кг):<sup>*</sup></label>
+            <input class="form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
+            <label class="form-label" for="textfield-age">Возраст (лет):</label>
+            <input class="form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
+            <input class="form-radio" type="radio" id="radio-slim" name="radio-slim" checked>
+            <label class="form-label" for="radio-slim">Похудение</label>
+            <input class="form-radio" type="radio" id="radio-fat" name="radio-fat">
+            <label class="form-label" for="radio-fat">Набор массы</label>
+            <input class="form-radio" type="radio" id="radio-unkwown" name="radio-unknown">
+            <label class="form-label" for="radio-unkwown">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="cat-form__about-owner" title="Владелец кота">
+            <legend>Контактные данные(владельца кота)</legend>
+            <label class="form-label" for="textfield-mail">E-mail:<sup>*</sup></label>
+            <input class="form-input" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
+            <label class="form-label" for="textfield-phone">Телефон:<sup>*</sup></label>
+            <input class="form-input" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
+          </fieldset>
+          <fieldset class="cat-form__comments" title="Комментарий">
+            <legend>Комментарий</legend>
+            <label class="form-label" for="textfield-note"></label>
+            <textarea class="form-note" id="textfield-note" name="textfield" rows="7">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
+          <fieldset class="cat-form__more" title="Дополнительно">
+            <legend>Дополнительно</legend>
+            <input class="form-check" id="check-sugar" type="checkbox" checked>
+            <label class="form-label" for="check-sugar">Сахарозаменитель</label>
+            <input class="form-check" id="check-water" type="checkbox">
+            <label class="form-label" for="check-water">Питьевая вода</label>
+            <input class="form-check" id="check-milk" type="checkbox">
+            <label class="form-label" for="check-milk">Молоко</label>
+            <input class="form-check" id="check-vitamins" type="checkbox">
+            <label class="form-label" for="check-vitamins">Витамины</label>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+        </form>
+        <span class="forms__notes"><sup>*</sup> — Обязательные поля</span>
       </section>
       <section class="address">
-        <!-- placeholder -->
+        <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
+        <p class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="address__map">
+          <span class="visually-hidden">Карта проезда</span>
+        </div>
       </section>
-
     </main>
-
-    <footer class="page-footer">
+    <footer class="footer">
       <a class="text-logo">Кэт энерджи</a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-        </ul>
+      <div class="social">
+        <a class="social__item social__item--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social__item social__item--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        <a class="social__item social__item--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
       </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </footer>
   </body>
 </html>
