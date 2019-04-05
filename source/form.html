@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -29,43 +30,43 @@
       <h1 class="main__title">Подбор программы</h1>
       <section class="forms">
         <form class="cat-form"  action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="cat-form__about-cat" title="Анкета кота">
+          <fieldset class="cat-form__fields" title="Анкета кота">
             <legend>Заполните анкету и мы подберем программу питания для вашего кота</legend>
-            <label class="form-label" for="textfield-name">Имя:<sup>*</sup></label>
-            <input class="form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
-            <label class="form-label" for="textfield-weight">Вес (кг):<sup>*</sup></label>
-            <input class="form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
-            <label class="form-label" for="textfield-age">Возраст (лет):</label>
-            <input class="form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
-            <input class="form-radio" type="radio" id="radio-slim" name="radio-slim" checked>
-            <label class="form-label" for="radio-slim">Похудение</label>
-            <input class="form-radio" type="radio" id="radio-fat" name="radio-fat">
-            <label class="form-label" for="radio-fat">Набор массы</label>
-            <input class="form-radio" type="radio" id="radio-unkwown" name="radio-unknown">
-            <label class="form-label" for="radio-unkwown">Не знаю (Нужен ваш совет)</label>
+            <label class="cat-form__form-label" for="textfield-name">Имя:<sup>*</sup></label>
+            <input class="cat-form__form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
+            <label class="cat-form__form-label" for="textfield-weight">Вес (кг):<sup>*</sup></label>
+            <input class="cat-form__form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
+            <label class="cat-form__form-label" for="textfield-age">Возраст (лет):</label>
+            <input class="cat-form__form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
+            <input class="cat-form__form-radio" type="radio" id="radio-slim" name="radio-slim" checked>
+            <label class="cat-form__form-label" for="radio-slim">Похудение</label>
+            <input class="cat-form__form-radio" type="radio" id="radio-fat" name="radio-fat">
+            <label class="cat-form__form-label" for="radio-fat">Набор массы</label>
+            <input class="cat-form__form-radio" type="radio" id="radio-unkwown" name="radio-unknown">
+            <label class="cat-form__form-label" for="radio-unkwown">Не знаю (Нужен ваш совет)</label>
           </fieldset>
-          <fieldset class="cat-form__about-owner" title="Владелец кота">
-            <legend>Контактные данные(владельца кота)</legend>
-            <label class="form-label" for="textfield-mail">E-mail:<sup>*</sup></label>
-            <input class="form-input" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
-            <label class="form-label" for="textfield-phone">Телефон:<sup>*</sup></label>
-            <input class="form-input" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
+          <fieldset class="cat-form__fields" title="Владелец кота">
+            <legend>Контактные данные (владельца кота)</legend>
+            <label class="cat-form__form-label" for="textfield-mail">E-mail:<sup>*</sup></label>
+            <input class="cat-form__form-input cat-form__form-input--mail" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
+            <label class="cat-form__form-label" for="textfield-phone">Телефон:<sup>*</sup></label>
+            <input class="cat-form__form-input cat-form__form-input--phone" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
           </fieldset>
-          <fieldset class="cat-form__comments" title="Комментарий">
+          <fieldset class="cat-form__fields" title="Комментарий">
             <legend>Комментарий</legend>
-            <label class="form-label" for="textfield-note"></label>
-            <textarea class="form-note" id="textfield-note" name="textfield" rows="7">Расскажите обо всех повадках кота</textarea>
+            <label class="cat-form__form-label" for="textfield-note"></label>
+            <textarea class="cat-form__form-note" id="textfield-note" name="textfield" rows="7">Расскажите обо всех повадках кота</textarea>
           </fieldset>
-          <fieldset class="cat-form__more" title="Дополнительно">
+          <fieldset class="cat-form__fields" title="Дополнительно">
             <legend>Дополнительно</legend>
-            <input class="form-check" id="check-sugar" type="checkbox" checked>
-            <label class="form-label" for="check-sugar">Сахарозаменитель</label>
-            <input class="form-check" id="check-water" type="checkbox">
-            <label class="form-label" for="check-water">Питьевая вода</label>
-            <input class="form-check" id="check-milk" type="checkbox">
-            <label class="form-label" for="check-milk">Молоко</label>
-            <input class="form-check" id="check-vitamins" type="checkbox">
-            <label class="form-label" for="check-vitamins">Витамины</label>
+            <input class="cat-form__form-check" id="check-sugar" type="checkbox" checked>
+            <label class="cat-form__form-label" for="check-sugar">Сахарозаменитель</label>
+            <input class="cat-form__form-check" id="check-water" type="checkbox">
+            <label class="cat-form__form-label" for="check-water">Питьевая вода</label>
+            <input class="cat-form__form-check" id="check-milk" type="checkbox">
+            <label class="cat-form__form-label" for="check-milk">Молоко</label>
+            <input class="cat-form__form-check" id="check-vitamins" type="checkbox">
+            <label class="cat-form__form-label" for="check-vitamins">Витамины</label>
           </fieldset>
           <button class="button" type="submit">Отправить заявку</button>
         </form>
