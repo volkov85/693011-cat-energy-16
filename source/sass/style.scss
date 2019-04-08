@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "mixins.scss";
 
 body {
   font-family: $fontBase, Arial, sans-serif;
@@ -15,3 +16,6 @@ body {
 @import "blocks/main-nav.scss";
 @import "blocks/offer.scss";
 @import "blocks/button.scss";
+@import "blocks/features.scss";
+@import "blocks/specification.scss";
+@import "blocks/example.scss";

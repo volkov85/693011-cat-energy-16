@@ -1,0 +1,7 @@
+.example {
+
+  &__title {
+    @include titles;
+    color: #111111;
+  }
+}

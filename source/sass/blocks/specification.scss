@@ -1,0 +1,18 @@
+.specification {
+  padding-left: 20px;
+  &__title {
+    @include titles;
+    color: #111111;
+    text-align: left;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+  &__description {
+    width: 192px;
+    margin-left: 80px;
+    font-family: $fontSecondary, Arial, sans-serif;
+    text-align: left;
+  }
+}
