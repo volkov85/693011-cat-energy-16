@@ -1,7 +1,17 @@
-@import "blocks/text-hiding.scss","blocks/visually-hidden.scss", "fonts.scss", "blocks/header.scss", "blocks/text-logo.scss", "blocks/main-nav.scss", "blocks/offer.scss";
+@import "fonts.scss";
 
 body {
+  font-family: $fontBase, Arial, sans-serif;
+  font-size: $fontBaseSize;
   width: 320px;
   margin: 0 auto;
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/text-hiding.scss";
+@import "blocks/header.scss";
+@import "blocks/text-logo.scss";
+@import "blocks/main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/offer.scss";
+@import "blocks/button.scss";
