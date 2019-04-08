@@ -4,15 +4,30 @@
     @include titles;
     color: #111111;
     text-align: left;
+    margin-bottom: 35px;
   }
   &__list {
     list-style: none;
     padding: 0;
+  }
+  &__item {
+    width: 260px;
+    margin-bottom: 20px;
   }
   &__description {
     width: 192px;
     margin-left: 80px;
     font-family: $fontSecondary, Arial, sans-serif;
     text-align: left;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      margin-left: -70px;
+      bottom: -10px;
+      width: 60px;
+      height: 60px;
+      background-color: #68b738;
+    }
   }
 }
