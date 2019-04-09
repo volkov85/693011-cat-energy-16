@@ -7,6 +7,10 @@ body {
   width: 320px;
   margin: 0 auto;
 }
+a {
+  text-decoration: none;
+  color: #111111;
+}
 
 @import "blocks/visually-hidden.scss";
 @import "blocks/text-hiding.scss";
@@ -19,3 +23,5 @@ body {
 @import "blocks/features.scss";
 @import "blocks/specification.scss";
 @import "blocks/example.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
