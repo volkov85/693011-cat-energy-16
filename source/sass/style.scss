@@ -1,8 +1,9 @@
 @import "fonts.scss";
 @import "mixins.scss";
+@import "variables.scss";
 
 body {
-  font-family: $fontBase, "Arial", sans-serif;
+  font-family: $fontBase;
   font-size: $fontBaseSize;
   width: 320px;
   margin: 0 auto;
