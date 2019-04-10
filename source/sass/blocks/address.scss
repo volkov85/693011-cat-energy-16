@@ -1,0 +1,39 @@
+.address__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $secondaryBackColor;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.address__invite {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 123px;
+  line-height: 1.4;
+}
+
+.address__location {
+  font-family: $fontSecondary;
+  font-size: $fontBaseSize;
+  width: 135px;
+  line-height: 1.4;
+}
+
+.address__map {
+  position: relative;
+  background-color: $secondaryBackColor;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    width: 124px;
+    height: 106px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

@@ -1,0 +1,20 @@
+$fontBase: "Oswald Regular", "Arial", sans-serif;
+$fontBold: "Oswald Medium", "Arial", sans-serif;
+
+$fontSecondary: "ArialMT", "Arial", sans-serif;
+
+$fontBaseSize: 14px;
+$fontBaseColor: #444444;
+
+$fontMainTitleSize: 36px;
+$fontSecTitleSize: 24px;
+
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald Medium";
+  src: url("../fonts/oswaldmedium.woff") format("woff");
+}

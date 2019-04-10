@@ -1,0 +1,31 @@
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+  font-family: $fontBase;
+  font-size: $fontBaseSize;
+  width: 320px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/text-hiding.scss";
+@import "blocks/header.scss";
+@import "blocks/text-logo.scss";
+@import "blocks/main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/offer.scss";
+@import "blocks/button.scss";
+@import "blocks/features.scss";
+@import "blocks/specification.scss";
+@import "blocks/example.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/products.scss";
+@import "blocks/address.scss";

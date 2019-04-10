@@ -1,0 +1,77 @@
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.products__item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $baseBorderColor;
+}
+
+.products__wrapper {
+  display: flex;
+}
+
+.products__title {
+  width: 72px;
+}
+
+.products__title h2 {
+  width: 72px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.products__stats {
+  font-family: $fontSecondary;
+  text-align: left;
+}
+
+.products__value {
+  text-align: right;
+  padding-left: 60px;
+}
+
+.products__field {
+  font-weight: 400;
+}
+
+.products__more-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products__more-title h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.products__more-goods {
+  font-family: $fontSecondary;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.products__more-wrapper {
+  padding-top: 83px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $baseBorderColor;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 145px;
+    top: 35px;
+    width: 31px;
+    height: 31px;
+    opacity: 0.2;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
