@@ -2,11 +2,12 @@
 @import "mixins.scss";
 
 body {
-  font-family: $fontBase, Arial, sans-serif;
+  font-family: $fontBase, "Arial", sans-serif;
   font-size: $fontBaseSize;
   width: 320px;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
   color: #111111;

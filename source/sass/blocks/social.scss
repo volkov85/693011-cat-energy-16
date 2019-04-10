@@ -4,16 +4,17 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 280px;
-  border-bottom: 1px solid #111111;
-  border-top: 1px solid #111111;
-  &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+  border-bottom: 1px solid $baseBorderColor;
+  border-top: 1px solid $baseBorderColor;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

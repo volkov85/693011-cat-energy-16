@@ -4,14 +4,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  &__wrapper {
-    width: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  &__picture-logo {
-    padding-top: 11px;
-    padding-bottom: 15px;
-  }
+}
+
+.header__wrapper {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header__picture-logo {
+  padding-top: 11px;
+  padding-bottom: 15px;
 }

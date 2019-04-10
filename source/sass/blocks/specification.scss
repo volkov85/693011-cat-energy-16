@@ -1,61 +1,73 @@
 .specification {
   padding-left: 20px;
-  &__title {
-    @include titles;
-    color: #111111;
-    text-align: left;
-    margin-bottom: 35px;
+}
+
+.specification__title {
+  @include titles;
+  color: #111111;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.specification__list {
+  list-style: none;
+  padding: 0;
+}
+
+.specification__item {
+  width: 260px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
   }
-  &__list {
-    list-style: none;
-    padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
-  &__item {
-    width: 260px;
-    margin-bottom: 20px;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      width: 60px;
-      height: 60px;
-      background-color: #68b738;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: 5px;
-      width: 60px;
-      height: 60px;
-      background-image: url("../img/advantage-leaf@1x.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
+}
+
+.specification__item--powder {
+
+  &::after {
+    background-image: url("../img/advantage-powder@1x.png");
   }
-  &__item--powder {
-    &::after {
-      background-image: url("../img/advantage-powder@1x.png");
-    }
+}
+
+.specification__item--change {
+
+  &::after {
+    background-image: url("../img/advantage-dining@1x.png");
   }
-  &__item--change {
-    &::after {
-      background-image: url("../img/advantage-dining@1x.png");
-    }
+}
+
+.specification__item--result {
+
+  &::after {
+    background-image: url("../img/advantage-clock@1x.png");
   }
-  &__item--result {
-    &::after {
-      background-image: url("../img/advantage-clock@1x.png");
-    }
-  }
-  &__description {
-    color: #444444;
-    width: 200px;
-    margin: 0;
-    margin-left: 80px;
-    font-family: $fontSecondary, Arial, sans-serif;
-    text-align: left;
-    position: relative;
-  }
+}
+
+.specification__description {
+  color: #444444;
+  width: 200px;
+  margin: 0;
+  margin-left: 80px;
+  font-family: $fontSecondary, "Arial", sans-serif;
+  text-align: left;
+  position: relative;
 }
