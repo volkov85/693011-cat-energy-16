@@ -26,35 +26,30 @@
     width: 60px;
     height: 60px;
     background-color: #68b738;
+    background-position: 5px 5px;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 5px;
-    width: 60px;
-    height: 60px;
+.specification__item--useful {
+  &::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
   }
 }
 
 .specification__item--powder {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 }
 
 .specification__item--change {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 }
 
 .specification__item--result {
-  &::after {
+  &::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
