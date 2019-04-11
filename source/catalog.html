@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -31,7 +32,9 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title main__title--catalog">Каталог продукции</h1>
+      <div class="main__title-wrapper">
+        <h1 class="main__title main__title--catalog">Каталог продукции</h1>
+      </div>
       <section class="products">
         <article class="products__item">
           <div class="products__wrapper">
@@ -232,52 +235,60 @@
       </section>
       <section class="more-goods">
         <h2 class="more-goods__title">Дополнительные товары</h2>
-        <article class="products__item">
-          <a class="products__title" href="#">
-            <h2>Сахарозаменитель</h2>
-          </a>
-          <table class="products__stats">
-            <tr>
-              <th class="products__field">1 упаковка (100 г)</th>
-              <td class="products__value">200 Р.</td>
-            </tr>
-          </table>
+        <article class="products__item products__item--cat">
+          <div class="products__wrapper products__wrapper--cat">
+            <a class="products__title" href="#">
+              <h2>Сахарозаменитель</h2>
+            </a>
+            <table class="products__stats">
+              <tr>
+                <th class="products__field">1 упаковка (100 г)</th>
+                <td class="products__value">200 Р.</td>
+              </tr>
+            </table>
+          </div>
           <a class="button" href="#">Заказать</a>
         </article>
-        <article class="products__item">
-          <a class="products__title" href="#">
-            <h2>Питьевая вода</h2>
-          </a>
-          <table class="products__stats">
-            <tr>
-              <th class="products__field">5 литров</th>
-              <td class="products__value">50 Р.</td>
-            </tr>
-          </table>
+        <article class="products__item  products__item--cat">
+          <div class="products__wrapper products__wrapper--cat">
+            <a class="products__title" href="#">
+              <h2>Питьевая вода</h2>
+            </a>
+            <table class="products__stats">
+              <tr>
+                <th class="products__field">5 литров</th>
+                <td class="products__value">50 Р.</td>
+              </tr>
+            </table>
+          </div>
           <a class="button" href="#">Заказать</a>
         </article>
-        <article class="products__item">
-          <a class="products__title" href="#">
-            <h2>Молоко</h2>
-          </a>
-          <table class="products__stats">
-            <tr>
-              <th class="products__field">1 литр</th>
-              <td class="products__value">100 Р.</td>
-            </tr>
-          </table>
+        <article class="products__item  products__item--cat">
+          <div class="products__wrapper products__wrapper--cat">
+            <a class="products__title" href="#">
+              <h2>Молоко</h2>
+            </a>
+            <table class="products__stats">
+              <tr>
+                <th class="products__field">1 литр</th>
+                <td class="products__value">100 Р.</td>
+              </tr>
+            </table>
+          </div>
           <a class="button" href="#">Заказать</a>
         </article>
-        <article class="products__item">
-          <a class="products__title" href="#">
-            <h2>Витамины</h2>
-          </a>
-          <table class="products__stats">
-            <tr>
-              <th class="products__field">1 упаковка (30 г)</th>
-              <td class="products__value">300 Р.</td>
-            </tr>
-          </table>
+        <article class="products__item  products__item--cat">
+          <div class="products__wrapper products__wrapper--cat">
+            <a class="products__title" href="#">
+              <h2>Витамины</h2>
+            </a>
+            <table class="products__stats">
+              <tr>
+                <th class="products__field">1 упаковка (30 г)</th>
+                <td class="products__value">300 Р.</td>
+              </tr>
+            </table>
+          </div>
           <a class="button" href="#">Заказать</a>
         </article>
       </section>
@@ -285,7 +296,7 @@
         <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
       </section>
       <section class="address">
-        <div class="address__wrapper">
+        <div class="address__wrapper address__wrapper--cat">
           <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
           <p class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>

@@ -1,4 +1,73 @@
+.example {
+  width: $widthMobile;
+  margin: auto;
+  background-color: $secondaryBackColor;
+  padding-top: 33px;
+}
+
 .example__title {
   @include titles;
-  color: #111111;
+  color: #111;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 33px;
+}
+
+.example__description {
+  color: #444;
+  width: 266px;
+  margin: 0;
+  font-family: $fontSecondary;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 27px;
+  line-height: 1.29;
+}
+
+.example__result {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.example__definition {
+  font-family: $fontSecondary;
+  font-size: 12px;
+  width: 70px;
+  text-align: center;
+}
+
+.example__value {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__total-cost {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.example__slider {
+  padding-bottom: 38px;
+}
+
+.example__cat {
+  height: 230px;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 35px;
+}
+
+.example__toggle {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 16px;
 }

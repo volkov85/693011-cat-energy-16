@@ -1,19 +1,7 @@
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
-
-body {
-  font-family: $fontBase;
-  font-size: $fontBaseSize;
-  width: 320px;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  color: #111111;
-}
-
+@import "base.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/text-hiding.scss";
 @import "blocks/header.scss";
@@ -29,3 +17,8 @@ a {
 @import "blocks/social.scss";
 @import "blocks/products.scss";
 @import "blocks/address.scss";
+@import "blocks/example.scss";
+@import "blocks/more-goods.scss";
+@import "blocks/gift.scss";
+@import "blocks/forms.scss";
+@import "blocks/form.scss";

@@ -1,22 +1,25 @@
 .specification {
-  padding-left: 20px;
+  width: $widthMobile;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 .specification__title {
   @include titles;
-  color: #111111;
+  color: #111;
   text-align: left;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
+  padding-left: 20px;
 }
 
 .specification__list {
   list-style: none;
-  padding: 0;
+  padding-left: 20px;
 }
 
 .specification__item {
   width: 260px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
 
   &::before {
@@ -55,7 +58,7 @@
 }
 
 .specification__description {
-  color: #444444;
+  color: #444;
   width: 200px;
   margin: 0;
   margin-left: 80px;
