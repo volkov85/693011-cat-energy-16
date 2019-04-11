@@ -7,4 +7,11 @@
 .more-goods__title {
   font-size: 24px;
   font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.more-goods__title-wrapper {
+  width: 280px;
+  border-bottom: 1px solid $baseBorderColor;
 }

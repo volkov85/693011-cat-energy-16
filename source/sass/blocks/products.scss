@@ -13,6 +13,7 @@
 .products__item--cat {
   border-bottom: 1px solid $baseBorderColor;
   width: 280px;
+  padding-bottom: 15px;
 }
 
 .products__wrapper {
@@ -36,9 +37,18 @@
   font-weight: 400;
 }
 
+.products__title--more h2 {
+  width: 280px;
+  text-transform: uppercase;
+}
+
 .products__stats {
   font-family: $fontSecondary;
   text-align: left;
+}
+
+.products__stats--more {
+  margin-bottom: 15px;
 }
 
 .products__value {

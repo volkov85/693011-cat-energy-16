@@ -2,7 +2,7 @@
   font: inherit;
   font-weight: 400;
   text-align: center;
-  color: #fff;
+  color: $baseColor;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
@@ -17,5 +17,5 @@
 
 .button--secondary {
   background-color: $secondaryBackColor;
-  color: #444;
+  color: $fontBaseColor;
 }
