@@ -1,0 +1,112 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__fields {
+  width: $widthMobile;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 9px;
+}
+
+.form__fields--main {
+  padding-left: 40px;
+  width: 280px;
+}
+
+.form__fields--contacts {
+  width: 300px;
+  padding-left: 20px;
+}
+
+.form__fields--comment {
+  width: 300px;
+  padding-left: 20px;
+}
+
+.form__fields--slim {
+  border-top: 1px solid $baseBorderColor;
+  border-bottom: 1px solid $baseBorderColor;
+  padding: 20px;
+  width: 280px;
+}
+
+.form__fields--more {
+  padding-bottom: 43px;
+  width: 300px;
+  padding-left: 20px;
+}
+
+.form__fields--more label {
+  padding-bottom: 27px;
+}
+
+.form__fields--more label:last-child {
+  padding-bottom: 0;
+}
+
+.form__fields--slim label {
+  padding-bottom: 27px;
+}
+
+.form__fields--slim label:last-child {
+  padding-bottom: 0;
+}
+
+.form__field-legend {
+  font-size: 24px;
+  line-height: 1;
+  width: 190px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.form__field-legend--main {
+  width: 320px;
+  font-size: 14px;
+  line-height: 1.29;
+  padding-bottom: 39px;
+  text-transform: uppercase;
+}
+
+.form__form-label {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.13;
+  color: $labelColor;
+}
+
+.forms__notes {
+  display: block;
+  font-family: $fontSecondary;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.form__form-input {
+  border: solid 1px $baseBorderColor;
+  font-family: $fontBase;
+  box-sizing: border-box;
+  padding: 14px;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1.13;
+  color: $fontBaseColor;
+  margin-bottom: 14px;
+}
+
+.form__form-note {
+  text-transform: uppercase;
+  font-family: $fontBase;
+  font-size: 16px;
+  color: $fontBaseColor;
+  width: 280px;
+  border: solid 1px $baseBorderColor;
+  resize: none;
+}

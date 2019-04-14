@@ -1,0 +1,33 @@
+.gift {
+  width: $widthMobile;
+  margin: auto;
+  text-align: center;
+  height: 290px;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.gift__description {
+  width: 180px;
+  font-family: $fontSecondary;
+  font-size: 16px;
+  color: $secondaryTextColor;
+  margin: 0 auto;
+  padding-top: 190px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    bottom: 120px;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
