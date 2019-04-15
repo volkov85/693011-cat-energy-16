@@ -1,5 +1,5 @@
 .main-nav {
-  width: 320px;
+  width: 100%;
 }
 
 .main-nav__list {
@@ -15,10 +15,36 @@
   font-weight: 600;
 }
 
+@media (min-width: $widthTablet) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .main-nav__item {
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid $baseBorderColor;
   border-right: 1px solid $baseBorderColor;
   border-left: 1px solid $baseBorderColor;
+}
+
+@media (min-width: $widthTablet) {
+  .main-nav__item {
+    border: 0;
+    padding-left: 36px;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .main-nav__toggle {
+    display: none;
+  }
 }

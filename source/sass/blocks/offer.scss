@@ -5,6 +5,15 @@
     linear-gradient(#63a73a 63.5%, transparent 36.5%);
 }
 
+@media (min-width: $widthTablet) {
+  .offer {
+    height: 846px;
+    width: 708px;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat center 80%;
+    margin: auto;
+  }
+}
+
 .offer__description {
   color: $baseColor;
   text-align: center;
@@ -12,8 +21,25 @@
   margin-top: 19px;
 }
 
+@media (min-width: $widthTablet) {
+  .offer__description {
+    color: $linkColor;
+    text-align: left;
+    font-size: 20px;
+    width: 290px;
+    margin-left: 88px;
+  }
+}
+
 .offer__wrapper {
   height: 276px;
   padding-top: 29px;
   margin-bottom: 135px;
+}
+
+@media (min-width: $widthTablet) {
+  .offer__wrapper {
+    margin-bottom: 0;
+    height: auto;
+  }
 }

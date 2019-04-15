@@ -1,5 +1,5 @@
 .specification {
-  width: $widthMobile;
+  width: 708px;
   margin: auto;
   padding-bottom: 20px;
 }
@@ -8,8 +8,10 @@
   @include titles;
   color: $linkColor;
   text-align: left;
+  width: $widthMobile;
   margin-bottom: 45px;
   padding-left: 20px;
+  margin: auto;
 }
 
 .specification__list {
@@ -17,8 +19,17 @@
   padding-left: 20px;
 }
 
+@media (min-width: $widthTablet) {
+  .specification__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
 .specification__item {
   width: 260px;
+  margin: auto;
   margin-bottom: 30px;
   position: relative;
 
@@ -30,6 +41,12 @@
     height: 60px;
     background-color: #68b738;
     background-position: 5px 5px;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item {
+    width: 300px;
   }
 }
 
