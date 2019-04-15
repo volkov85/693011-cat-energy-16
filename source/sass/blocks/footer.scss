@@ -8,6 +8,22 @@
   background-color: $secondaryBackColor;
 }
 
+@media (min-width: $widthTablet) {
+  .footer {
+    // width: $widthTablet;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .footer {
+    // width: $widthDesktop;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .footer__wrapper {
   width: 280px;
   display: flex;

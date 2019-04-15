@@ -14,6 +14,15 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .offer {
+    height: 600px;
+    width: $widthDesktop;
+    background: url("../img/index-can-desktop@1x.png") no-repeat center 80%;
+    margin: auto;
+  }
+}
+
 .offer__description {
   color: $baseColor;
   text-align: center;

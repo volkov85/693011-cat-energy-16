@@ -2,6 +2,26 @@
   width: 100%;
 }
 
+@media (min-width: $widthDesktop) {
+  .main-nav--desktop {
+    width: 550px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      margin-left: 0px;
+      bottom: -600px;
+      width: 720px;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: -100;
+    }
+  }
+}
+
 .main-nav__list {
   list-style: none;
   display: flex;
@@ -19,6 +39,8 @@
   .main-nav__list {
     flex-direction: row;
     justify-content: space-around;
+    font-size: 18px;
+    line-height: 1.39;
   }
 }
 
@@ -33,17 +55,23 @@
 @media (min-width: $widthTablet) {
   .main-nav__item {
     border: 0;
-    padding-left: 36px;
-  }
-}
-
-@media (min-width: $widthTablet) {
-  .main-nav__toggle {
-    display: none;
+    padding-right: 36px;
   }
 }
 
 @media (min-width: $widthDesktop) {
+  .main-nav__item {
+    text-align: center;
+    width: 170px;
+    padding-right: 10px;
+  }
+
+  .main-nav--desktop a{
+    color: $baseColor;
+  }
+}
+
+@media (min-width: $widthTablet) {
   .main-nav__toggle {
     display: none;
   }

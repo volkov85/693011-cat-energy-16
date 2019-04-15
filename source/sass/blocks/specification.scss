@@ -1,17 +1,29 @@
 .specification {
-  width: 708px;
+  width: $widthMobile;
   margin: auto;
   padding-bottom: 20px;
+}
+
+@media (min-width: $widthTablet) {
+  .specification {
+    width: $widthTablet;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .specification {
+    width: $widthDesktop;
+  }
 }
 
 .specification__title {
   @include titles;
   color: $linkColor;
   text-align: left;
-  width: $widthMobile;
-  margin-bottom: 45px;
+  width: 280px;
   padding-left: 20px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .specification__list {
@@ -47,6 +59,16 @@
 @media (min-width: $widthTablet) {
   .specification__item {
     width: 300px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 100px;
+      width: 60px;
+      height: 60px;
+      background-color: #68b738;
+      background-position: 5px 5px;
+    }
   }
 }
 
@@ -82,4 +104,14 @@
   font-family: $fontSecondary;
   text-align: left;
   position: relative;
+}
+
+@media (min-width: $widthTablet) {
+  .specification__description {
+    margin: 0;
+    width: 260px;
+    margin-top: 117px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

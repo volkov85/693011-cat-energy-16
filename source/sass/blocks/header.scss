@@ -8,6 +8,16 @@
 @media (min-width: $widthTablet) {
   .header {
     flex-direction: row;
+    width: $widthTablet;
+    margin: auto;
+    background-color: initial;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .header {
+    width: $widthDesktop;
+    justify-content: space-around;
   }
 }
 
