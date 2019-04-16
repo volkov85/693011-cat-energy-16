@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+@media (min-width: $widthDesktop) {
+  .more-goods {
+    padding-bottom: 86px;
+  }
+}
+
 .more-goods__title {
   font-size: 24px;
   font-weight: 400;
@@ -29,6 +35,12 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .more-goods__title-wrapper {
+    width: 1217px;
+  }
+}
+
 .more-goods .products__item {
   width: 280px;
 }
@@ -36,7 +48,7 @@
 @media (min-width: $widthTablet) {
   .more-goods .products__item {
     width: 708px;
-    margin: 0;
+    margin: auto;
     background-color: $baseColor;
     border: 1px solid $baseBorderColor;
     margin-bottom: -1px;
@@ -44,8 +56,20 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .more-goods .products__item {
+    display: flex;
+  }
+}
+
 @media (min-width: $widthTablet) {
   .more-goods .button {
     width: 633px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .more-goods .button {
+    width: 245px;
   }
 }

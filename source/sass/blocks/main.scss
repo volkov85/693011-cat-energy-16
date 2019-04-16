@@ -49,6 +49,13 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .main__title--catalog {
+    width: 1327px;
+    padding-left: 113px;
+  }
+}
+
 .main__title--forms {
   width: 300px;
   padding-left: 20px;
