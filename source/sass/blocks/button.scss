@@ -15,6 +15,12 @@
   margin: auto;
 }
 
+@media (min-width: $widthTablet) {
+  .button {
+    margin-left: 88px;
+  }
+}
+
 .button--secondary {
   background-color: $secondaryBackColor;
   color: $fontBaseColor;

@@ -8,6 +8,17 @@
   font-weight: 400;
 }
 
+@media (min-width: $widthTablet) {
+  .main__title {
+    color: $linkColor;
+    text-align: left;
+    font-size: 60px;
+    width: 420px;
+    margin: 0;
+    margin-left: 88px;
+  }
+}
+
 .main__title-wrapper {
   width: 100%;
   padding-top: 31px;

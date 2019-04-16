@@ -1,5 +1,25 @@
 .main-nav {
-  width: 320px;
+  width: 100%;
+}
+
+@media (min-width: $widthDesktop) {
+  .main-nav--desktop {
+    width: 550px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      margin-left: 0;
+      bottom: -600px;
+      width: 720px;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: -100;
+    }
+  }
 }
 
 .main-nav__list {
@@ -15,10 +35,44 @@
   font-weight: 600;
 }
 
+@media (min-width: $widthTablet) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
 .main-nav__item {
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid $baseBorderColor;
   border-right: 1px solid $baseBorderColor;
   border-left: 1px solid $baseBorderColor;
+}
+
+@media (min-width: $widthTablet) {
+  .main-nav__item {
+    border: 0;
+    padding-right: 36px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .main-nav__item {
+    text-align: center;
+    width: 170px;
+    padding-right: 10px;
+  }
+
+  .main-nav--desktop a {
+    color: $baseColor;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
