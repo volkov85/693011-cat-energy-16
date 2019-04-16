@@ -27,11 +27,26 @@
   border-top: 1px solid $baseBorderColor;
 }
 
+@media (min-width: $widthTablet) {
+  .main__title-wrapper {
+    border: 0;
+    padding-bottom: 0;
+  }
+}
+
 .main__title--catalog {
-  width: 320px;
+  width: 280px;
   color: $linkColor;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 20px;
+}
+
+@media (min-width: $widthTablet) {
+  .main__title--catalog {
+    width: 735px;
+    padding-left: 33px;
+    margin: auto;
+  }
 }
 
 .main__title--forms {

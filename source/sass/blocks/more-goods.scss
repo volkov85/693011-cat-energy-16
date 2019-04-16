@@ -11,7 +11,41 @@
   margin-bottom: 30px;
 }
 
+@media (min-width: $widthTablet) {
+  .more-goods__title {
+    font-size: 36px;
+  }
+}
+
 .more-goods__title-wrapper {
   width: 280px;
   border-bottom: 1px solid $baseBorderColor;
+}
+
+@media (min-width: $widthTablet) {
+  .more-goods__title-wrapper {
+    width: 633px;
+    border: 0;
+  }
+}
+
+.more-goods .products__item {
+  width: 280px;
+}
+
+@media (min-width: $widthTablet) {
+  .more-goods .products__item {
+    width: 708px;
+    margin: 0;
+    background-color: $baseColor;
+    border: 1px solid $baseBorderColor;
+    margin-bottom: -1px;
+    padding: 28px 0 28px;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .more-goods .button {
+    width: 633px;
+  }
 }

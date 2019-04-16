@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+.address--cat {
+  background-color: $secondaryBackColor;
+}
+
 .address__wrapper {
   display: flex;
   justify-content: center;
@@ -11,8 +15,13 @@
   padding-right: 10px;
 }
 
-.address__wrapper--cat {
-  background-color: $secondaryBackColor;
+@media (min-width: $widthTablet) {
+  .address__wrapper {
+    width: 628px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 70px;
+  }
 }
 
 .address__invite {
