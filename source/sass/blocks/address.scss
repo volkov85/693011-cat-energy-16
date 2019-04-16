@@ -3,6 +3,12 @@
   margin: auto;
 }
 
+@media (min-width: $widthDesktop) {
+  .address {
+    position: relative;
+  }
+}
+
 .address--cat {
   background-color: $secondaryBackColor;
 }
@@ -21,6 +27,17 @@
     justify-content: space-between;
     margin: auto;
     padding: 70px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .address__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    z-index: 100;
+    background-color: $baseColor;
   }
 }
 
