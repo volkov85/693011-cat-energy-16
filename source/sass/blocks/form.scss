@@ -14,9 +14,32 @@
   padding-bottom: 9px;
 }
 
+@media (min-width: $widthDesktop) {
+  .forms__wrapper-desk {
+    display: flex;
+
+    @include widthDesktop;
+    justify-content: space-between;
+  }
+}
+
 .form__fields--main {
-  padding-left: 40px;
-  width: 280px;
+  padding-left: 20px;
+  width: 300px;
+}
+
+@media (min-width: $widthTablet) {
+  .form__fields--main {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__fields--main {
+    @include widthDesktop;
+    width: inherit;
+    padding: 0;
+  }
 }
 
 .form__fields--contacts {
@@ -24,9 +47,39 @@
   padding-left: 20px;
 }
 
+@media (min-width: $widthTablet) {
+  .form__fields--contacts {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__fields--contacts {
+    @include widthDesktop;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .forms__wrapper-cont {
+    display: flex;
+  }
+}
+
 .form__fields--comment {
   width: 300px;
   padding-left: 20px;
+}
+
+@media (min-width: $widthTablet) {
+  .form__fields--comment {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__fields--comment {
+    @include widthDesktop;
+  }
 }
 
 .form__fields--slim {
@@ -36,10 +89,35 @@
   width: 280px;
 }
 
+@media (min-width: $widthTablet) {
+  .form__fields--slim {
+    @include widthTablets;
+    width: 715px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__fields--slim {
+    width: inherit;
+  }
+}
+
 .form__fields--more {
   padding-bottom: 43px;
   width: 300px;
   padding-left: 20px;
+}
+
+@media (min-width: $widthTablet) {
+  .form__fields--more {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__fields--more {
+    @include widthDesktop;
+  }
 }
 
 .form__fields--more label {
@@ -58,6 +136,18 @@
   padding-bottom: 0;
 }
 
+.form__more-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $widthTablet) {
+  .form__more-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .form__field-legend {
   font-size: 24px;
   line-height: 1;
@@ -66,8 +156,14 @@
   padding-top: 30px;
 }
 
+@media (min-width: $widthTablet) {
+  .form__field-legend {
+    width: 510px;
+  }
+}
+
 .form__field-legend--main {
-  width: 320px;
+  width: 280px;
   font-size: 14px;
   line-height: 1.29;
   padding-bottom: 39px;
@@ -82,11 +178,23 @@
   color: $labelColor;
 }
 
+@media (min-width: $widthTablet) {
+  .form__form-label {
+    width: 280px;
+  }
+}
+
 .forms__notes {
   display: block;
   font-family: $fontSecondary;
   text-align: center;
   margin-top: 23px;
+}
+
+@media (min-width: $widthTablet) {
+  .forms__notes {
+    margin-left: 61px;
+  }
 }
 
 .form__form-input {
@@ -109,4 +217,41 @@
   width: 280px;
   border: solid 1px $baseBorderColor;
   resize: none;
+}
+
+@media (min-width: $widthTablet) {
+  .form__form-note {
+    width: 631px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__form-note {
+    width: 1220px;
+  }
+}
+
+.form__notes-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $widthTablet) {
+  .form__notes-wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__notes-wrapper {
+    width: 1327px;
+    padding-left: 113px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form .button {
+    width: 568px;
+    margin: 0;
+  }
 }

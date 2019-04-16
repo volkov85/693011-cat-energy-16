@@ -43,9 +43,7 @@
 
 @media (min-width: $widthTablet) {
   .main__title--catalog {
-    width: 735px;
-    padding-left: 33px;
-    margin: auto;
+    @include widthTablets;
   }
 }
 
@@ -64,4 +62,17 @@
   padding-top: 31px;
   padding-bottom: 32px;
   border-top: 1px solid $baseBorderColor;
+}
+
+@media (min-width: $widthTablet) {
+  .main__title--forms {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .main__title--forms {
+    width: 1327px;
+    padding-left: 113px;
+  }
 }
