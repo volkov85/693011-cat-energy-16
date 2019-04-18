@@ -35,37 +35,41 @@
       <h1 class="main__title main__title--forms">Подбор программы</h1>
       <section class="forms">
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fields form__fields--main" title="Анкета кота">
-            <legend class="form__field-legend--main">Заполните анкету и мы подберем<br> программу питания для вашего кота</legend>
-            <label class="form__form-label" for="textfield-name">Имя:<sup>*</sup>
-              <input class="form__form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
-            </label>
-            <label class="form__form-label" for="textfield-weight">Вес (кг):<sup>*</sup>
-              <input class="form__form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
-            </label>
-            <label class="form__form-label" for="textfield-age">Возраст (лет):
-              <input class="form__form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
-            </label>
-          </fieldset>
-          <fieldset class="form__fields form__fields--slim" title="Выбор программы">
-            <label class="form__form-label">
-              <input class="form__form-radio" type="radio" name="radio" checked>Похудение
-            </label>
-            <label class="form__form-label">
-              <input class="form__form-radio" type="radio" name="radio">Набор массы
-            </label>
-            <label class="form__form-label">
-              <input class="form__form-radio" type="radio" name="radio">Не знаю (Нужен ваш совет)
-            </label>
-          </fieldset>
+          <div class="forms__wrapper-desk">
+            <fieldset class="form__fields form__fields--main" title="Анкета кота">
+              <legend class="form__field-legend--main">Заполните анкету и мы подберем<br> программу питания для вашего кота</legend>
+              <label class="form__form-label" for="textfield-name">Имя:<sup>*</sup>
+                <input class="form__form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
+              </label>
+              <label class="form__form-label" for="textfield-weight">Вес (кг):<sup>*</sup>
+                <input class="form__form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
+              </label>
+              <label class="form__form-label" for="textfield-age">Возраст (лет):
+                <input class="form__form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
+              </label>
+            </fieldset>
+            <fieldset class="form__fields form__fields--slim" title="Выбор программы">
+              <label class="form__form-label">
+                <input class="form__form-radio" type="radio" name="radio" checked>Похудение
+              </label>
+              <label class="form__form-label">
+                <input class="form__form-radio" type="radio" name="radio">Набор массы
+              </label>
+              <label class="form__form-label">
+                <input class="form__form-radio" type="radio" name="radio">Не знаю (Нужен ваш совет)
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="form__fields form__fields--contacts" title="Владелец кота">
             <legend class="form__field-legend">Контактные данные (владельца кота)</legend>
-            <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
-              <input class="form__form-input form__form-input--mail" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
-            </label>
-            <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
-              <input class="form__form-input form__form-input--phone" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
-            </label>
+            <div class="forms__wrapper-cont">
+              <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
+                <input class="form__form-input form__form-input--mail" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
+              </label>
+              <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
+                <input class="form__form-input form__form-input--phone" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="form__fields form__fields--comment" title="Комментарий">
             <legend class="form__field-legend">Комментарий</legend>
@@ -73,31 +77,35 @@
           </fieldset>
           <fieldset class="form__fields form__fields--more" title="Дополнительно">
             <legend class="form__field-legend">Дополнительно</legend>
-            <label class="form__form-label" for="check-sugar">
-              <input class="form__form-check" id="check-sugar" type="checkbox" checked>Сахарозаменитель
-            </label>
-            <label class="form__form-label" for="check-water">
-              <input class="form__form-check" id="check-water" type="checkbox">Питьевая вода
-            </label>
-            <label class="form__form-label" for="check-milk">
-              <input class="form__form-check" id="check-milk" type="checkbox">Молоко
-            </label>
-            <label class="form__form-label" for="check-vitamins">
-              <input class="form__form-check" id="check-vitamins" type="checkbox">Витамины
-            </label>
+            <div class="form__more-wrapper">
+              <label class="form__form-label" for="check-sugar">
+                <input class="form__form-check" id="check-sugar" type="checkbox" checked>Сахарозаменитель
+              </label>
+              <label class="form__form-label" for="check-water">
+                <input class="form__form-check" id="check-water" type="checkbox">Питьевая вода
+              </label>
+              <label class="form__form-label" for="check-milk">
+                <input class="form__form-check" id="check-milk" type="checkbox">Молоко
+              </label>
+              <label class="form__form-label" for="check-vitamins">
+                <input class="form__form-check" id="check-vitamins" type="checkbox">Витамины
+              </label>
+            </div>
           </fieldset>
-          <button class="button" type="submit">Отправить заявку</button>
+          <div class="form__notes-wrapper">
+            <button class="button" type="submit">Отправить заявку</button>
+            <span class="forms__notes"><sup>*</sup> — Обязательные поля</span>
+          </div>
         </form>
-        <span class="forms__notes"><sup>*</sup> — Обязательные поля</span>
       </section>
-      <section class="address">
+      <section class="address address--cat">
         <div class="address__wrapper address__wrapper--cat">
           <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
           <p class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="address__map">
           <span class="visually-hidden">Карта проезда</span>
-          <img src="img/bg-map-mobile@1x.png" alt="Карта проезда" width="320" height="400">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d594.1892689776671!2d30.322721119422095!3d59.938671387081726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1555404418442!5m2!1sru!2skz" width=100% height="400" frameborder="0" allowfullscreen></iframe>
         </div>
       </section>
     </main>

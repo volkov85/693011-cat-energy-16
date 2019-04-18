@@ -27,11 +27,31 @@
   border-top: 1px solid $baseBorderColor;
 }
 
+@media (min-width: $widthTablet) {
+  .main__title-wrapper {
+    border: 0;
+    padding-bottom: 0;
+  }
+}
+
 .main__title--catalog {
-  width: 320px;
+  width: 280px;
   color: $linkColor;
   text-align: left;
-  padding-left: 40px;
+  padding-left: 20px;
+}
+
+@media (min-width: $widthTablet) {
+  .main__title--catalog {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .main__title--catalog {
+    width: 1327px;
+    padding-left: 113px;
+  }
 }
 
 .main__title--forms {
@@ -42,4 +62,17 @@
   padding-top: 31px;
   padding-bottom: 32px;
   border-top: 1px solid $baseBorderColor;
+}
+
+@media (min-width: $widthTablet) {
+  .main__title--forms {
+    @include widthTablets;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .main__title--forms {
+    width: 1327px;
+    padding-left: 113px;
+  }
 }

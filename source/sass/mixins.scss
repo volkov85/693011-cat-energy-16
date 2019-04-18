@@ -6,3 +6,15 @@
   color: $baseColor;
   line-height: 1;
 }
+
+@mixin widthTablets {
+  width: 735px;
+  padding-left: 33px;
+  margin: auto;
+}
+
+@mixin widthDesktop {
+  width: 1327px;
+  padding-left: 113px;
+  margin: auto;
+}

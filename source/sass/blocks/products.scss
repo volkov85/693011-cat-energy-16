@@ -4,15 +4,50 @@
   align-items: center;
 }
 
+@media (min-width: $widthTablet) {
+  .products {
+    width: 708px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .products {
+    width: 1217px;
+    justify-content: space-between;
+  }
+}
+
 .products__item {
   width: 100%;
   border-bottom: 1px solid $baseBorderColor;
   padding-bottom: 25px;
 }
 
-.more-goods .products__item {
-  width: 280px;
-  padding-bottom: 15px;
+@media (min-width: $widthTablet) {
+  .products__item {
+    border: 0;
+    width: 324px;
+    background-color: $secondaryBackColor;
+    margin-top: 140px;
+  }
+
+  .products__item:nth-child(odd) {
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .products__item {
+    width: 245px;
+    margin-top: 140px;
+  }
+
+  .products__item:nth-child(odd) {
+    margin-right: 0;
+  }
 }
 
 .products__wrapper {
@@ -22,8 +57,52 @@
   margin-bottom: 13px;
 }
 
+.products__item-wrapper {
+  width: 280px;
+  margin: auto;
+}
+
+@media (min-width: $widthTablet) {
+  .products__item-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .products__wrapper {
+    flex-direction: column;
+    width: 250px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .products__wrapper-desk {
+    display: flex;
+    width: 1217px;
+    justify-content: space-between;
+  }
+}
+
 .more-goods .products__wrapper {
   flex-direction: column;
+}
+
+@media (min-width: $widthTablet) {
+  .more-goods .products__wrapper {
+    flex-direction: row;
+    width: 633px;
+    justify-content: space-between;
+  }
+}
+
+.products__picture {
+  display: block;
+}
+
+@media (min-width: $widthTablet) {
+  .products__picture {
+    margin: auto;
+  }
 }
 
 .products__title h2 {
@@ -34,9 +113,25 @@
   margin-bottom: 15px;
 }
 
+@media (min-width: $widthTablet) {
+  .products__title h2 {
+    width: 135px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+}
+
 .more-goods .products__title h2 {
   width: 280px;
   text-transform: uppercase;
+}
+
+@media (min-width: $widthTablet) {
+  .more-goods .products__title h2 {
+    text-align: left;
+  }
 }
 
 .products__stats {
@@ -46,8 +141,20 @@
   table-layout: fixed;
 }
 
+@media (min-width: $widthTablet) {
+  .products__stats {
+    font-size: 16px;
+  }
+}
+
 .products__stats-wrapper {
   width: 140px;
+}
+
+@media (min-width: $widthTablet) {
+  .products__stats-wrapper {
+    width: 250px;
+  }
 }
 
 .products__value {
@@ -98,4 +205,23 @@
   padding-top: 83px;
   padding-bottom: 25px;
   border-bottom: 1px solid $baseBorderColor;
+}
+
+@media (min-width: $widthTablet) {
+  .products__more-wrapper {
+    width: 322px;
+    border: 1px solid $baseBorderColor;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .products__more-wrapper {
+    width: 245px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .products__item .button {
+    width: 169px;
+  }
 }
