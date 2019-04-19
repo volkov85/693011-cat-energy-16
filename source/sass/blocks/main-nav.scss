@@ -1,5 +1,16 @@
 .main-nav {
   width: 100%;
+  display: none;
+}
+
+@media (min-width: $widthTablet) {
+  .main-nav {
+    display: block;
+  }
+}
+
+.main-nav--show {
+  display: block;
 }
 
 @media (min-width: $widthDesktop) {
