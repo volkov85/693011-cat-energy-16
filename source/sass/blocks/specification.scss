@@ -21,14 +21,14 @@
   color: $linkColor;
   text-align: left;
   width: 280px;
-  padding-left: 20px;
   margin: auto;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .specification__list {
   list-style: none;
-  padding-left: 20px;
+  padding-left: 0;
+  margin-top: 11px;
 }
 
 @media (min-width: $widthTablet) {
@@ -42,13 +42,14 @@
 .specification__item {
   width: 260px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -4px;
+    left: -10px;
     width: 60px;
     height: 60px;
     background-color: #68b738;
@@ -100,8 +101,9 @@
   color: $fontBaseColor;
   width: 200px;
   margin: 0;
-  margin-left: 80px;
+  margin-left: 70px;
   font-family: $fontSecondary;
+  line-height: 1.29;
   text-align: left;
   position: relative;
 }

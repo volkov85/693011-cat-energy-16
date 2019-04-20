@@ -8,9 +8,9 @@
   border: none;
   background-color: $baseBackColor;
   width: 280px;
-  font-size: 16px;
-  line-height: 1;
-  padding: 13px 0 12px;
+  font-size: $fontBaseSize;
+  line-height: 1.29;
+  padding: 11px 0 11px;
   display: block;
   margin: auto;
 }

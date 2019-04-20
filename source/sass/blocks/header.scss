@@ -26,8 +26,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 11px;
-  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+.header__picture-mobile {
+  margin-right: 25px;
 }
 
 .header__picture-tablet {
