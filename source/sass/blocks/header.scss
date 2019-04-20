@@ -8,9 +8,11 @@
 @media (min-width: $widthTablet) {
   .header {
     flex-direction: row;
-    width: $widthTablet;
-    margin: auto;
+    width: 739px;
     background-color: initial;
+    padding-left: 29px;
+    padding-top: 24px;
+    margin: auto;
   }
 }
 
@@ -28,6 +30,14 @@
   justify-content: space-around;
   padding-top: 13px;
   padding-bottom: 12px;
+}
+
+@media (min-width: $widthTablet) {
+  .header__wrapper {
+    width: auto;
+    padding: 0;
+    padding-right: 95px;
+  }
 }
 
 .header__picture-mobile {

@@ -7,9 +7,11 @@
 
 @media (min-width: $widthTablet) {
   .offer {
-    height: 846px;
-    width: 708px;
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat center 80%;
+    height: 810px;
+    width: 650px;
+    padding-top: 55px;
+    padding-left: 118px;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat 50% 100%;
     margin: auto;
   }
 }
@@ -36,7 +38,8 @@
     text-align: left;
     font-size: 20px;
     width: 290px;
-    margin-left: 88px;
+    margin: 0;
+    margin-top: 40px;
   }
 }
 
@@ -48,11 +51,15 @@
 
 @media (min-width: $widthTablet) {
   .offer__wrapper {
-    margin-bottom: 0;
+    margin-bottom: 47px;
     height: auto;
+    padding: 0;
   }
 
   .offer .button {
-    margin-left: 80px;
+    width: 245px;
+    font-size: 20px;
+    padding: 13px 0 14px;
+    margin: 0;
   }
 }
