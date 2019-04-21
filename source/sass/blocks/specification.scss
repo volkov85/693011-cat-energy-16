@@ -16,7 +16,9 @@
 
 @media (min-width: $widthDesktop) {
   .specification {
-    width: $widthDesktop;
+    width: 1220px;
+    padding: 34px 110px 40px;
+    border: 0;
   }
 }
 
@@ -50,6 +52,12 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .specification__list {
+    justify-content: space-between;
   }
 }
 
@@ -97,6 +105,22 @@
 
   .specification__item:nth-last-child(-n+2) {
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .specification__item {
+    width: 245px;
+    margin: 0;
+    min-height: 240px;
+  }
+
+  .specification__item:nth-child(odd) {
+    margin: 0;
+  }
+
+  .specification__item:nth-last-child(-n+2) {
+    margin: 0;
   }
 }
 

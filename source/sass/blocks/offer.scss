@@ -18,9 +18,11 @@
 
 @media (min-width: $widthDesktop) {
   .offer {
-    height: 600px;
-    width: $widthDesktop;
-    background: url("../img/index-can-desktop@1x.png") no-repeat center 80%;
+    height: 473px;
+    width: 1247px;
+    padding-left: 190px;
+    padding-top: 108px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat 63% 30%;
     margin: auto;
   }
 }
@@ -61,5 +63,11 @@
     font-size: 20px;
     padding: 13px 0 14px;
     margin: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .offer__wrapper {
+    margin-bottom: 49px;
   }
 }

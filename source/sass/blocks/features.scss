@@ -13,8 +13,11 @@
 
 @media (min-width: $widthDesktop) {
   .features {
-    width: $widthDesktop;
+    width: 1220px;
+    padding: 80px 110px 40px;
     display: flex;
+    margin: auto;
+    justify-content: space-between;
   }
 }
 
@@ -38,8 +41,11 @@
 
 @media (min-width: $widthDesktop) {
   .features__item {
-    width: 570px;
-    padding-top: 47px;
+    width: 518px;
+    padding-left: 52px;
+    padding-top: 77px;
+    padding-bottom: 59px;
+    margin: 0;
   }
 }
 
@@ -111,13 +117,14 @@
 @media (min-width: $widthDesktop) {
   .features__title {
     font-size: 36px;
-    margin-left: 216px;
+    margin-left: 162px;
+    margin-bottom: 75px;
 
     &::after {
       content: "";
       position: absolute;
       margin-left: -310px;
-      bottom: -30px;
+      bottom: -25px;
       width: 71px;
       height: 97px;
       background-image: url("../img/icon-cat-slim.svg");
@@ -128,8 +135,8 @@
     &::before {
       content: "";
       position: absolute;
-      margin-left: -170px;
-      bottom: -30px;
+      margin-left: -164px;
+      bottom: -35px;
       width: 100px;
       height: 100px;
       background-color: $baseBackColor;
@@ -168,9 +175,13 @@
     &::after {
       width: 134px;
       height: 57px;
-      margin-left: -400px;
-      bottom: -30px;
+      margin-left: -385px;
+      bottom: -14px;
     }
+  }
+
+  .features__title--fat ~ .features__description {
+    min-height: auto;
   }
 }
 
@@ -204,9 +215,15 @@
 
 @media (min-width: $widthDesktop) {
   .features__description {
-    width: 470px;
+    width: 480px;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .features__title--fat ~ .features__description {
+    width: 445px;
+    margin-bottom: 8px;
   }
 }
 
@@ -240,6 +257,15 @@
     &::after {
       margin-left: 21px;
       bottom: 3px;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .features__link {
+    &::after {
+      margin-left: 23px;
+      bottom: 5px;
     }
   }
 }

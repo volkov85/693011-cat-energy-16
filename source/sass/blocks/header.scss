@@ -18,8 +18,11 @@
 
 @media (min-width: $widthDesktop) {
   .header {
-    width: $widthDesktop;
-    justify-content: space-around;
+    width: 1221px;
+    padding-left: 109px;
+    padding-top: 53px;
+    padding-right: 110px;
+    justify-content: space-between;
   }
 }
 

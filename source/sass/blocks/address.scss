@@ -108,3 +108,18 @@
     }
   }
 }
+
+@media (min-width: $widthDesktop) {
+  .address__map {
+    background: $secondaryBackColor url("../img/bg-map-desktop@1x.png") no-repeat center center;
+    height: 400px;
+
+    &::after {
+      bottom: 140px;
+      right: 330px;
+      width: 115px;
+      height: 107px;
+      background: url("../img/map-pin.png") no-repeat center center / 120px;
+    }
+  }
+}
