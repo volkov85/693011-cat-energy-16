@@ -108,11 +108,29 @@
   }
 }
 
+@media (min-width: $widthTablet) {
+  .specification__item--useful {
+    &::after {
+      @include numbersBackground;
+    }
+  }
+}
+
 .specification__item--powder {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item--powder {
+    &::after {
+      @include numbersBackground;
+      content: "2";
+      left: 113px;
+    }
   }
 }
 
@@ -124,11 +142,31 @@
   }
 }
 
+@media (min-width: $widthTablet) {
+  .specification__item--change {
+    &::after {
+      @include numbersBackground;
+      content: "3";
+      left: 113px;
+    }
+  }
+}
+
 .specification__item--result {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item--result {
+    &::after {
+      @include numbersBackground;
+      content: "4";
+      left: 113px;
+    }
   }
 }
 

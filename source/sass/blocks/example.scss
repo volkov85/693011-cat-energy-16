@@ -7,6 +7,8 @@
 
 @media (min-width: $widthTablet) {
   .example {
+    padding-top: 51px;
+    border-left: 30px;
     width: 708px;
     background: linear-gradient($baseColor 63.5%, $secondaryBackColor 36.5%);
   }
@@ -26,6 +28,15 @@
   text-align: left;
   padding-left: 20px;
   padding-bottom: 34px;
+}
+
+@media (min-width: $widthTablet) {
+  .example__title {
+    font-size: 60px;
+    line-height: 1;
+    padding: 0;
+    padding-bottom: 60px;
+  }
 }
 
 .example__description {
@@ -114,6 +125,14 @@
     height: 30px;
     background-color: $secondaryBackColor;
     z-index: -1;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .example__definition {
+    &::after {
+      background-color: $baseColor;
+    }
   }
 }
 

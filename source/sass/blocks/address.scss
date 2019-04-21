@@ -27,7 +27,7 @@
     width: 628px;
     justify-content: space-between;
     margin: auto;
-    padding: 70px;
+    padding: 63px 70px;
   }
 }
 
@@ -52,12 +52,27 @@
   margin-left: 19px;
 }
 
+@media (min-width: $widthTablet) {
+  .address__invite {
+    font-size: 20px;
+    width: 154px;
+  }
+}
+
 .address__location {
   font-family: $fontSecondary;
   font-size: $fontBaseSize;
   width: 135px;
   line-height: 1.43;
   margin: 0;
+}
+
+@media (min-width: $widthTablet) {
+  .address__location {
+    font-size: 16px;
+    width: 160px;
+    text-align: right;
+  }
 }
 
 .address__map {
@@ -76,5 +91,20 @@
     width: 124px;
     height: 100px;
     background: url("../img/map-pin.png") no-repeat center center / 62px;
+  }
+}
+
+
+@media (min-width: $widthTablet) {
+  .address__map {
+    background: $secondaryBackColor url("../img/bg-map-tablet@1x.png") no-repeat center center;
+    height: 400px;
+
+    &::after {
+      bottom: 140px;
+      width: 115px;
+      height: 107px;
+      background: url("../img/map-pin.png") no-repeat center center / 120px;
+    }
   }
 }

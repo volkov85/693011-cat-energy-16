@@ -18,3 +18,13 @@
   padding-left: 113px;
   margin: auto;
 }
+
+@mixin numbersBackground {
+  content: "1";
+  position: absolute;
+  left: 118px;
+  bottom: -27px;
+  font-size: 281px;
+  color: $secondaryBackColor;
+  z-index: -1;
+}

@@ -8,7 +8,39 @@
   padding: 21px 0 20px 73px;
 }
 
+@media (min-width: $widthTablet) {
+  .social {
+    border: 0;
+    padding: 0;
+    width: auto;
+  }
+}
+
 .social__item--instagram {
   margin-right: 40px;
   margin-left: 36px;
+}
+
+@media (min-width: $widthTablet) {
+  .social__item--instagram {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .social__item--vkontakte svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__item--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__item--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
 }
