@@ -73,3 +73,15 @@
     width: 245px;
   }
 }
+
+@media (min-width: $widthTablet) {
+  .more-goods .products__stats {
+    width: 353px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .more-goods .products__stats {
+    width: 284px;
+  }
+}

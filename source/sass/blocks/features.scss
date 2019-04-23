@@ -1,14 +1,23 @@
 .features {
   width: 100%;
   margin: auto;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   margin-top: 22px;
+}
+
+@media (min-width: $widthTablet) {
+  .features {
+    margin: 0;
+  }
 }
 
 @media (min-width: $widthDesktop) {
   .features {
-    width: $widthDesktop;
+    width: 1220px;
+    padding: 80px 110px 40px;
     display: flex;
+    margin: auto;
+    justify-content: space-between;
   }
 }
 
@@ -18,20 +27,25 @@
   margin: auto;
   background-color: #f2f2f2;
   margin-bottom: 20px;
-  padding-top: 39px;
+  padding-top: 36px;
   padding-left: 20px;
 }
 
 @media (min-width: $widthTablet) {
   .features__item {
-    width: 688px;
+    width: 655px;
+    padding: 76px 0 62px 53px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .features__item {
-    width: 570px;
-    padding-top: 47px;
+    width: 518px;
+    padding-left: 52px;
+    padding-top: 77px;
+    padding-bottom: 59px;
+    margin: 0;
   }
 }
 
@@ -48,7 +62,7 @@
   &::after {
     content: "";
     position: absolute;
-    margin-left: -177px;
+    margin-left: -170px;
     bottom: -10px;
     width: 35px;
     height: 49px;
@@ -72,12 +86,14 @@
 @media (min-width: $widthTablet) {
   .features__title {
     font-size: 36px;
+    margin-left: 0;
+    margin-bottom: 27px;
 
     &::after {
       content: "";
       position: absolute;
-      margin-left: 210px;
-      bottom: -165px;
+      margin-left: 258px;
+      bottom: -163px;
       width: 141px;
       height: 194px;
       background-image: url("../img/icon-cat-slim.svg");
@@ -88,11 +104,11 @@
     &::before {
       content: "";
       position: absolute;
-      margin-left: 350px;
+      margin-left: 393px;
       bottom: -180px;
       width: 200px;
       height: 200px;
-      background-color: #68b738;
+      background-color: $baseBackColor;
       border-radius: 50%;
     }
   }
@@ -101,13 +117,14 @@
 @media (min-width: $widthDesktop) {
   .features__title {
     font-size: 36px;
-    margin-left: 216px;
+    margin-left: 162px;
+    margin-bottom: 75px;
 
     &::after {
       content: "";
       position: absolute;
       margin-left: -310px;
-      bottom: -30px;
+      bottom: -25px;
       width: 71px;
       height: 97px;
       background-image: url("../img/icon-cat-slim.svg");
@@ -118,11 +135,11 @@
     &::before {
       content: "";
       position: absolute;
-      margin-left: -170px;
-      bottom: -30px;
+      margin-left: -164px;
+      bottom: -35px;
       width: 100px;
       height: 100px;
-      background-color: #68b738;
+      background-color: $baseBackColor;
       border-radius: 50%;
     }
   }
@@ -132,8 +149,8 @@
   &::after {
     width: 67px;
     height: 28px;
-    margin-left: -220px;
-    bottom: -3px;
+    margin-left: -217px;
+    bottom: -1px;
     background-image: url("../img/icon-cat-pro.svg");
   }
 }
@@ -143,9 +160,13 @@
     &::after {
       width: 268px;
       height: 113px;
-      margin-left: 100px;
-      bottom: -150px;
+      margin-left: 155px;
+      bottom: -135px;
     }
+  }
+
+  .features__title--fat ~ .features__description {
+    min-height: 97px;
   }
 }
 
@@ -154,9 +175,13 @@
     &::after {
       width: 134px;
       height: 57px;
-      margin-left: -400px;
-      bottom: -30px;
+      margin-left: -385px;
+      bottom: -14px;
     }
+  }
+
+  .features__title--fat ~ .features__description {
+    min-height: auto;
   }
 }
 
@@ -164,24 +189,41 @@
   font-family: $fontSecondary;
   width: 240px;
   text-align: left;
-  border-bottom: 1px solid $baseBorderColor;
-  padding-bottom: 24px;
+  line-height: 1.29;
   margin: 0;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $baseBorderColor;
 }
 
 @media (min-width: $widthTablet) {
   .features__description {
+    width: 372px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 0;
+    margin-bottom: 30px;
+  }
+
+  .features__title--fat ~ .features__description {
     width: 340px;
     font-size: 16px;
     line-height: 1.5;
+    border: 0;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .features__description {
-    width: 470px;
+    width: 480px;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .features__title--fat ~ .features__description {
+    width: 445px;
+    margin-bottom: 8px;
   }
 }
 
@@ -191,19 +233,39 @@
   text-transform: uppercase;
   font-size: 16px;
   color: $linkColor;
-  margin-bottom: 22px;
-  margin-top: 20px;
+  margin: 17px 0 22px;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    margin-left: 18px;
-    bottom: 3px;
+    margin-left: 10px;
+    bottom: 2px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .features__link {
+    font-size: 20px;
+    margin: 0;
+
+    &::after {
+      margin-left: 21px;
+      bottom: 3px;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .features__link {
+    &::after {
+      margin-left: 23px;
+      bottom: 5px;
+    }
   }
 }

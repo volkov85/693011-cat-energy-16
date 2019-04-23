@@ -6,13 +6,19 @@
 
 @media (min-width: $widthTablet) {
   .specification {
-    width: $widthTablet;
+    width: 738px;
+    padding-left: 30px;
+    padding-top: 5px;
+    border-bottom: 1px solid $baseBorderColor;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .specification {
-    width: $widthDesktop;
+    width: 1220px;
+    padding: 34px 110px 40px;
+    border: 0;
   }
 }
 
@@ -21,37 +27,54 @@
   color: $linkColor;
   text-align: left;
   width: 280px;
-  padding-left: 20px;
   margin: auto;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $widthTablet) {
+  .specification__title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+    width: 375px;
+    padding-bottom: 55px;
+  }
 }
 
 .specification__list {
   list-style: none;
-  padding-left: 20px;
+  padding-left: 0;
+  margin-top: 11px;
 }
 
 @media (min-width: $widthTablet) {
   .specification__list {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .specification__list {
+    justify-content: space-between;
   }
 }
 
 .specification__item {
   width: 260px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -4px;
+    left: -10px;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
+    background-color: $baseBackColor;
     background-position: 5px 5px;
   }
 }
@@ -59,40 +82,115 @@
 @media (min-width: $widthTablet) {
   .specification__item {
     width: 300px;
+    margin: 0;
+    margin-bottom: 78px;
+    min-height: 240px;
+    position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      bottom: 100px;
-      width: 60px;
-      height: 60px;
-      background-color: #68b738;
+      left: 1px;
+      bottom: 155px;
+      width: 80px;
+      height: 80px;
+      background-color: $baseBackColor;
       background-position: 5px 5px;
     }
+  }
+
+  .specification__item:nth-child(odd) {
+    margin-right: 82px;
+  }
+
+  .specification__item:nth-last-child(-n+2) {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .specification__item {
+    width: 245px;
+    margin: 0;
+    min-height: 240px;
+  }
+
+  .specification__item:nth-child(odd) {
+    margin: 0;
+  }
+
+  .specification__item:nth-last-child(-n+2) {
+    margin: 0;
   }
 }
 
 .specification__item--useful {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item--useful {
+    &::after {
+      @include numbersBackground;
+    }
   }
 }
 
 .specification__item--powder {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item--powder {
+    &::after {
+      @include numbersBackground;
+      content: "2";
+      left: 113px;
+    }
   }
 }
 
 .specification__item--change {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item--change {
+    &::after {
+      @include numbersBackground;
+      content: "3";
+      left: 113px;
+    }
   }
 }
 
 .specification__item--result {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .specification__item--result {
+    &::after {
+      @include numbersBackground;
+      content: "4";
+      left: 113px;
+    }
   }
 }
 
@@ -100,8 +198,9 @@
   color: $fontBaseColor;
   width: 200px;
   margin: 0;
-  margin-left: 80px;
+  margin-left: 70px;
   font-family: $fontSecondary;
+  line-height: 1.29;
   text-align: left;
   position: relative;
 }

@@ -11,7 +11,12 @@
 @media (min-width: $widthTablet) {
   .footer {
     flex-direction: row;
-    justify-content: space-around;
+    // width: 708px;
+    // padding-left: 30px;
+    // padding-right: 30px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    justify-content: space-between;
   }
 }
 
@@ -28,8 +33,18 @@
   align-items: center;
   justify-content: space-between;
   font-size: 16px;
-  padding-top: 10px;
+  padding-top: 17px;
 }
+
+@media (min-width: $widthTablet) {
+  .footer__wrapper {
+    width: auto;
+    padding: 0;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+}
+
 
 .footer__copyright {
   font-family: $fontSecondary;

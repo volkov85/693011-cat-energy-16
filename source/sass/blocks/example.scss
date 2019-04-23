@@ -2,20 +2,24 @@
   width: $widthMobile;
   margin: auto;
   background-color: $secondaryBackColor;
-  padding-top: 33px;
+  padding-top: 30px;
 }
 
 @media (min-width: $widthTablet) {
   .example {
+    padding-top: 45px;
+    border-left: 30px;
     width: 708px;
-    // padding-left: 111px;
-    background: linear-gradient($baseColor 63.5%, $secondaryBackColor 36.5%);
+    height: 1032px;
+    background: linear-gradient($baseColor 50%, $secondaryBackColor 50% 50%);
   }
 }
 
 @media (min-width: $widthDesktop) {
   .example {
-    width: 1329px;
+    width: 1220px;
+    height: 558px;
+    padding: 34px 110px 40px;
     background: linear-gradient($baseColor 20%, $secondaryBackColor 20% 70%);
     display: flex;
   }
@@ -26,7 +30,16 @@
   color: $linkColor;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 33px;
+  padding-bottom: 34px;
+}
+
+@media (min-width: $widthTablet) {
+  .example__title {
+    font-size: 60px;
+    line-height: 1;
+    padding: 0;
+    padding-bottom: 60px;
+  }
 }
 
 .example__description {
@@ -36,7 +49,7 @@
   font-family: $fontSecondary;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 40px;
   line-height: 1.29;
 }
 
@@ -69,23 +82,76 @@
   }
 }
 
+.example_wrapper {
+  width: 124px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    width: 123px;
+    height: 55px;
+    border: 1px solid $baseBorderColor;
+    border-radius: 3px;
+    z-index: 1;
+  }
+}
+
+.example_wrapper:first-child {
+  margin-right: 32px;
+}
+
 .example__result {
+  width: 320px;
   margin: 0;
-  padding-left: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .example__definition {
   font-family: $fontSecondary;
   font-size: 12px;
+  line-height: 1;
   width: 70px;
   text-align: center;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -8px;
+    width: 87px;
+    height: 30px;
+    background-color: $secondaryBackColor;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .example__definition {
+    &::after {
+      background-color: $baseColor;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__definition {
+    &::after {
+      background-color: $secondaryBackColor;
+    }
+  }
 }
 
 .example__value {
   font-size: 24px;
   margin: 0;
+  padding-bottom: 8px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
@@ -94,12 +160,12 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 41px;
 }
 
 .example__slider {
-  padding-bottom: 38px;
+  padding-bottom: 37px;
 }
 
 @media (min-width: $widthDesktop) {
@@ -113,12 +179,41 @@
   background-image: url("../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .example__toggle {
   display: flex;
-  justify-content: space-around;
   text-transform: uppercase;
   font-size: 16px;
+  margin-left: 64px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 55px;
+    top: 2px;
+    width: 82px;
+    height: 12px;
+    border-radius: 6px;
+    border: solid 1px $togglerBorderColor;
+    background-color: $baseColor;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 61px;
+    top: 6px;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $baseBackColor;
+    z-index: 1;
+  }
+}
+
+.example__toggler:first-child {
+  margin-right: 120px;
 }

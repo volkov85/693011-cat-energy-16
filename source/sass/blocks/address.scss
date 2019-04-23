@@ -15,10 +15,11 @@
 
 .address__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  width: 320px;
+  margin: auto;
 }
 
 @media (min-width: $widthTablet) {
@@ -26,7 +27,7 @@
     width: 628px;
     justify-content: space-between;
     margin: auto;
-    padding: 70px;
+    padding: 63px 70px;
   }
 }
 
@@ -44,33 +45,81 @@
 .address__invite {
   text-transform: uppercase;
   font-size: 16px;
-  width: 123px;
-  line-height: 1.4;
-  margin-right: 20px;
+  width: 130px;
+  line-height: 1.25;
+  margin: 0;
+  margin-right: 11px;
+  margin-left: 19px;
+}
+
+@media (min-width: $widthTablet) {
+  .address__invite {
+    font-size: 20px;
+    width: 154px;
+  }
 }
 
 .address__location {
   font-family: $fontSecondary;
   font-size: $fontBaseSize;
   width: 135px;
-  line-height: 1.4;
+  line-height: 1.43;
+  margin: 0;
+}
+
+@media (min-width: $widthTablet) {
+  .address__location {
+    font-size: 16px;
+    width: 160px;
+    text-align: right;
+  }
 }
 
 .address__map {
   position: relative;
-  background-color: $secondaryBackColor;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  background: $secondaryBackColor url("../img/bg-map-mobile@1x.png") no-repeat center center;
+  height: 362px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: 200px;
+    bottom: 147px;
     width: 124px;
-    height: 106px;
-    background-image: url("../img/map-pin.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    height: 100px;
+    background: url("../img/map-pin.png") no-repeat center center / 62px;
+  }
+}
+
+
+@media (min-width: $widthTablet) {
+  .address__map {
+    background: $secondaryBackColor url("../img/bg-map-tablet@1x.png") no-repeat center center;
+    height: 400px;
+
+    &::after {
+      bottom: 140px;
+      width: 115px;
+      height: 107px;
+      background: url("../img/map-pin.png") no-repeat center center / 120px;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .address__map {
+    background: $secondaryBackColor url("../img/bg-map-desktop@1x.png") no-repeat center center;
+    height: 400px;
+
+    &::after {
+      bottom: 140px;
+      right: 330px;
+      width: 115px;
+      height: 107px;
+      background: url("../img/map-pin.png") no-repeat center center / 120px;
+    }
   }
 }

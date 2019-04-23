@@ -1,24 +1,28 @@
 .offer {
   width: 100%;
-  background: url("../img/index-can-mobile@1x.png") no-repeat center 77%,
+  background: url("../img/index-can-mobile@1x.png") no-repeat center 79%,
     url("../img/index-background-mobile@1x.jpg") no-repeat top center,
     linear-gradient(#63a73a 63.5%, transparent 36.5%);
 }
 
 @media (min-width: $widthTablet) {
   .offer {
-    height: 846px;
-    width: 708px;
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat center 80%;
+    height: 810px;
+    width: 650px;
+    padding-top: 55px;
+    padding-left: 118px;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat 50% 100%;
     margin: auto;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .offer {
-    height: 600px;
-    width: $widthDesktop;
-    background: url("../img/index-can-desktop@1x.png") no-repeat center 80%;
+    height: 473px;
+    width: 1247px;
+    padding-left: 190px;
+    padding-top: 108px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat 63% 30%;
     margin: auto;
   }
 }
@@ -27,7 +31,7 @@
   color: $baseColor;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 19px;
+  margin-top: 22px;
 }
 
 @media (min-width: $widthTablet) {
@@ -36,7 +40,8 @@
     text-align: left;
     font-size: 20px;
     width: 290px;
-    margin-left: 88px;
+    margin: 0;
+    margin-top: 40px;
   }
 }
 
@@ -48,11 +53,21 @@
 
 @media (min-width: $widthTablet) {
   .offer__wrapper {
-    margin-bottom: 0;
+    margin-bottom: 47px;
     height: auto;
+    padding: 0;
   }
 
   .offer .button {
-    margin-left: 80px;
+    width: 245px;
+    font-size: 20px;
+    padding: 13px 0 14px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .offer__wrapper {
+    margin-bottom: 49px;
   }
 }
