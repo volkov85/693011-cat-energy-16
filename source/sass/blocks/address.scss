@@ -81,7 +81,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: $secondaryBackColor url("../img/bg-map-mobile@1x.png") no-repeat center center;
+  background: $secondaryBackColor url("../img/bg-map-mobile@1x.png") no-repeat center center / cover;
   height: 362px;
 
   &::after {
@@ -97,7 +97,7 @@
 
 @media (min-width: $widthTablet) {
   .address__map {
-    background: $secondaryBackColor url("../img/bg-map-tablet@1x.png") no-repeat center center;
+    background: $secondaryBackColor url("../img/bg-map-tablet@1x.png") no-repeat center center / cover;
     height: 400px;
 
     &::after {
@@ -111,7 +111,7 @@
 
 @media (min-width: $widthDesktop) {
   .address__map {
-    background: $secondaryBackColor url("../img/bg-map-desktop@1x.png") no-repeat center center;
+    background: $secondaryBackColor url("../img/bg-map-desktop@1x.png") no-repeat center center / cover;
     height: 400px;
 
     &::after {
