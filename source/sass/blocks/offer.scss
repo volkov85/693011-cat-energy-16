@@ -32,6 +32,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 21px;
+  line-height: 1;
 }
 
 @media (min-width: $widthTablet) {
@@ -41,7 +42,7 @@
     font-size: 20px;
     width: 290px;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 42px;
   }
 }
 
@@ -53,7 +54,7 @@
 
 @media (min-width: $widthTablet) {
   .offer__wrapper {
-    margin-bottom: 44px;
+    margin-bottom: 48px;
     height: auto;
     padding: 0;
   }
