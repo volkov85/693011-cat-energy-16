@@ -56,6 +56,7 @@
   .address__invite {
     font-size: 20px;
     width: 154px;
+    margin-left: 0;
   }
 }
 
@@ -121,5 +122,17 @@
       height: 107px;
       background: url("../img/map-pin.png") no-repeat center center / 120px;
     }
+  }
+}
+
+.address__loc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $widthTablet) {
+  .address__location:first-child {
+    margin-bottom: 9px;
   }
 }

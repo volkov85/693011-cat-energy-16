@@ -6,7 +6,7 @@
 @media (min-width: $widthTablet) {
   .main-nav {
     display: block;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -28,8 +28,8 @@
     &::after {
       content: "";
       position: absolute;
-      left: 88px;
-      bottom: -588px;
+      left: 89px;
+      bottom: -587px;
       width: 720px;
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
