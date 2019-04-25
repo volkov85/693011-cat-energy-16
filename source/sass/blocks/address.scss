@@ -36,9 +36,11 @@
     position: absolute;
     top: 95px;
     left: 110px;
-    width: 570px;
+    width: 410px;
     z-index: 100;
     background-color: $baseColor;
+    padding-left: 75px;
+    padding-right: 85px;
   }
 }
 
@@ -116,8 +118,8 @@
     height: 400px;
 
     &::after {
-      bottom: 140px;
-      right: 330px;
+      bottom: 146px;
+      right: 323px;
       width: 115px;
       height: 107px;
       background: url("../img/map-pin.png") no-repeat center center / 120px;
@@ -134,5 +136,11 @@
 @media (min-width: $widthTablet) {
   .address__location:first-child {
     margin-bottom: 9px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .address__location {
+    text-align: left;
   }
 }
