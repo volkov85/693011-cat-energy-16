@@ -20,8 +20,8 @@
 
 .main__title-wrapper {
   width: 100%;
-  padding-top: 31px;
-  padding-bottom: 32px;
+  padding-top: 27px;
+  padding-bottom: 40px;
   border-bottom: 1px solid $baseBorderColor;
   border-top: 1px solid $baseBorderColor;
 }
@@ -37,7 +37,6 @@
   width: 280px;
   color: $linkColor;
   text-align: left;
-  padding-left: 20px;
 }
 
 @media (min-width: $widthTablet) {
