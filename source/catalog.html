@@ -45,7 +45,11 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x">
+                <img src="img/chicken-small-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
@@ -72,7 +76,11 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x">
+                <img src="img/chicken-big-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
