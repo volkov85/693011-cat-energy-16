@@ -34,6 +34,12 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .main__title-wrapper {
+    padding-top: 73px;
+  }
+}
+
 .main__title--catalog {
   width: 280px;
   color: $linkColor;
@@ -50,7 +56,7 @@
 @media (min-width: $widthDesktop) {
   .main__title--catalog {
     width: 1327px;
-    padding-left: 113px;
+    padding-left: 110px;
   }
 }
 

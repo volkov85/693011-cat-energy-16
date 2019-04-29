@@ -12,6 +12,7 @@
 
 @media (min-width: $widthTablet) {
   .gift {
+    margin: 25px 0 31px;
     width: $widthTablet;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
@@ -50,15 +51,16 @@
   .gift__description {
     padding: 0;
     text-align: left;
-    padding-top: 110px;
-    margin-left: 460px;
+    padding-top: 117px;
+    margin-left: 452px;
     position: relative;
+    line-height: 1.25;
 
     &::after {
       content: "";
       position: absolute;
-      left: -330px;
-      bottom: -5px;
+      left: -331px;
+      bottom: 7px;
       width: 56px;
       height: 61px;
       background-image: url("../img/icon-gift.svg");

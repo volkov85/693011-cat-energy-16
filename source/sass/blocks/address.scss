@@ -27,7 +27,7 @@
     width: 628px;
     justify-content: space-between;
     margin: auto;
-    padding: 63px 70px;
+    padding: 63px 70px 58px;
   }
 }
 
@@ -135,7 +135,7 @@
 
 @media (min-width: $widthTablet) {
   .address__location:first-child {
-    margin-bottom: 9px;
+    margin-bottom: 14px;
   }
 }
 
