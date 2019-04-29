@@ -13,7 +13,6 @@
     border-left: 30px;
     width: 768px;
     background: none;
-    // background: linear-gradient($baseColor 50%, $secondaryBackColor 50% 50%);
   }
 }
 
@@ -313,6 +312,7 @@
       z-index: 1;
     }
   }
+}
 
 @media (min-width: $widthDesktop) {
   .example__cat {
@@ -326,30 +326,30 @@
 }
 
 .example__cat--fat {
-    width: 50%;
+  width: 50%;
+  height: 517px;
+  background: url("../img/before-desktop@1x.png") no-repeat -16% center;
+}
+
+.example__cat--slim {
+  width: 50%;
+  height: 517px;
+  background: url("../img/after-desktop@1x.png") no-repeat 110% center;
+}
+
+
+@media (min-width: $widthDesktop) {
+  .example__cat--fat {
+    width: 57.2%;
     height: 517px;
     background: url("../img/before-desktop@1x.png") no-repeat -16% center;
   }
 
-.example__cat--slim {
+  .example__cat--slim {
     width: 50%;
     height: 517px;
     background: url("../img/after-desktop@1x.png") no-repeat 110% center;
   }
-}
-
-@media (min-width: $widthDesktop) {
-  .example__cat--fat {
-      width: 57.2%;
-      height: 517px;
-      background: url("../img/before-desktop@1x.png") no-repeat -16% center;
-    }
-
-  .example__cat--slim {
-      width: 50%;
-      height: 517px;
-      background: url("../img/after-desktop@1x.png") no-repeat 110% center;
-    }
 }
 
 .example__toggle {
