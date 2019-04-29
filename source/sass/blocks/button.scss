@@ -25,3 +25,9 @@
   background-color: $secondaryBackColor;
   color: $fontBaseColor;
 }
+
+@media (min-width: $widthDesktop) {
+  .button--secondary {
+    width: 169px;
+  }
+}

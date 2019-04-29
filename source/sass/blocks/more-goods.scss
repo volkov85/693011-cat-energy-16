@@ -45,6 +45,23 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .more-goods__title {
+    margin: 0;
+    margin-top: 12px;
+    padding-left: 40px;
+
+    &::after {
+      left: -72px;
+      top: 24px;
+      width: 1440px;
+      height: 3px;
+      background-color: $baseBackColor;
+      z-index: -1;
+    }
+  }
+}
+
 .more-goods__title-wrapper {
   width: 280px;
   border-bottom: 1px solid $baseBorderColor;
@@ -59,7 +76,8 @@
 
 @media (min-width: $widthDesktop) {
   .more-goods__title-wrapper {
-    width: 1217px;
+    width: 1297px;
+    margin-bottom: 32px;
   }
 }
 
@@ -91,7 +109,15 @@
 
 @media (min-width: $widthDesktop) {
   .more-goods .products__item {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    width: 895px;
     display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    border-left: none;
+    border-right: none;
+    justify-content: space-between;
   }
 }
 
@@ -104,6 +130,17 @@
   .more-goods .products__value {
     border: none;
     width: 92px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .more-goods .products__field {
+    text-align: left;
+  }
+
+  .more-goods .products__value {
+    text-align: left;
+    width: 65px;
   }
 }
 
@@ -138,7 +175,7 @@
 
 @media (min-width: $widthDesktop) {
   .more-goods .products__stats {
-    width: 284px;
+    width: inherit;
   }
 }
 
@@ -158,6 +195,14 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .more-goods .products__wrapper {
+    margin: 0;
+    justify-content: initial;
+    margin-right: 13px;
+  }
+}
+
 .more-goods h3 {
   width: 280px;
   text-transform: uppercase;
@@ -169,5 +214,11 @@
     font-size: 20px;
     font-weight: normal;
     margin: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .more-goods h3 {
+    margin-right: 42px;
   }
 }

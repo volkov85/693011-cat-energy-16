@@ -95,6 +95,10 @@
   .main-nav__item--active {
     border-bottom: 2px solid $baseBackColor;
   }
+
+  .main-nav__item--active-main {
+    border-bottom: 2px solid $baseBackColor;
+  }
 }
 
 @media (min-width: $widthDesktop) {
@@ -118,6 +122,10 @@
   }
 
   .main-nav__item--active {
+    border-bottom: 2px solid $baseBackColor;
+  }
+
+  .main-nav__item--active-main {
     border-bottom: 2px solid $baseColor;
   }
 }

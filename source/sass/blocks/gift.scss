@@ -20,6 +20,8 @@
 
 @media (min-width: $widthDesktop) {
   .gift {
+    margin: 0;
+    margin-top: 45px;
     width: 245px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
@@ -74,14 +76,14 @@
   .gift__description {
     padding: 0;
     text-align: center;
-    padding-top: 160px;
+    padding-top: 187px;
     position: relative;
     margin: auto;
 
     &::after {
       content: "";
       position: absolute;
-      left: 60px;
+      left: 64px;
       bottom: 120px;
       width: 56px;
       height: 61px;
