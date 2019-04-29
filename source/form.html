@@ -43,36 +43,39 @@
           <div class="forms__wrapper-desk">
             <fieldset class="form__fields form__fields--main" title="Анкета кота">
               <legend class="form__field-legend--main">Заполните анкету и мы подберем<br> программу питания для вашего кота</legend>
-              <label class="form__form-label" for="textfield-name">Имя:<sup>*</sup>
-                <input class="form__form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
+              <label class="form__form-label">Имя:<sup>*</sup>
+                <input class="form__form-input" type="text" name="textfield" value="Барсик" placeholder="Имя">
               </label>
-              <label class="form__form-label" for="textfield-weight">Вес (кг):<sup>*</sup>
-                <input class="form__form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
+              <label class="form__form-label">Вес (кг):<sup>*</sup>
+                <input class="form__form-input" type="text" name="textfield" value="7" placeholder="Вес">
               </label>
-              <label class="form__form-label" for="textfield-age">Возраст (лет):
-                <input class="form__form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
+              <label class="form__form-label">Возраст (лет):
+                <input class="form__form-input" type="text" name="textfield" value="7" placeholder="Возраст">
               </label>
             </fieldset>
             <fieldset class="form__fields form__fields--slim" title="Выбор программы">
               <label class="form__form-label">
-                <input class="form__form-radio" type="radio" name="radio" checked>Похудение
+                <input class="form__form-radio visually-hidden" type="radio" name="radio" checked>
+                <span>Похудение</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-radio" type="radio" name="radio">Набор массы
+                <input class="form__form-radio visually-hidden" type="radio" name="radio">
+                <span>Набор массы</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-radio" type="radio" name="radio">Не знаю (Нужен ваш совет)
+                <input class="form__form-radio visually-hidden" type="radio" name="radio">
+                <span>Не знаю (Нужен ваш совет)</span>
               </label>
             </fieldset>
           </div>
           <fieldset class="form__fields form__fields--contacts" title="Владелец кота">
             <legend class="form__field-legend">Контактные данные (владельца кота)</legend>
             <div class="forms__wrapper-cont">
-              <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
-                <input class="form__form-input form__form-input--mail" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
+              <label class="form__form-label">E-mail:<sup>*</sup>
+                <input class="form__form-input form__form-input--mail" type="text" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
               </label>
-              <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
-                <input class="form__form-input form__form-input--phone" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
+              <label class="form__form-label">Телефон:<sup>*</sup>
+                <input class="form__form-input form__form-input--phone" type="text" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
               </label>
             </div>
           </fieldset>
@@ -83,17 +86,17 @@
           <fieldset class="form__fields form__fields--more" title="Дополнительно">
             <legend class="form__field-legend">Дополнительно</legend>
             <div class="form__more-wrapper">
-              <label class="form__form-label" for="check-sugar">
-                <input class="form__form-check" id="check-sugar" type="checkbox" checked>Сахарозаменитель
+              <label class="form__form-label">
+                <input class="form__form-check" type="checkbox" checked>Сахарозаменитель
               </label>
-              <label class="form__form-label" for="check-water">
-                <input class="form__form-check" id="check-water" type="checkbox">Питьевая вода
+              <label class="form__form-label">
+                <input class="form__form-check" type="checkbox">Питьевая вода
               </label>
-              <label class="form__form-label" for="check-milk">
-                <input class="form__form-check" id="check-milk" type="checkbox">Молоко
+              <label class="form__form-label">
+                <input class="form__form-check" type="checkbox">Молоко
               </label>
-              <label class="form__form-label" for="check-vitamins">
-                <input class="form__form-check" id="check-vitamins" type="checkbox">Витамины
+              <label class="form__form-label">
+                <input class="form__form-check" type="checkbox">Витамины
               </label>
             </div>
           </fieldset>

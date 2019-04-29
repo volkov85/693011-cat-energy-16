@@ -25,7 +25,8 @@
 
 .form__fields--main {
   padding-left: 20px;
-  width: 300px;
+  padding-right: 20px;
+  width: 280px;
 }
 
 @media (min-width: $widthTablet) {
@@ -83,10 +84,9 @@
 }
 
 .form__fields--slim {
-  border-top: 1px solid $baseBorderColor;
-  border-bottom: 1px solid $baseBorderColor;
-  padding: 20px;
-  width: 280px;
+  border: 1px solid $baseBorderColor;
+  padding: 29px 20px 25px 66px;
+  width: 234px;
 }
 
 @media (min-width: $widthTablet) {
@@ -129,7 +129,34 @@
 }
 
 .form__fields--slim label {
-  padding-bottom: 27px;
+  padding-bottom: 24px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    border: solid 1px $togglerBorderColor;
+    background-color: $baseColor;
+    left: -46px;
+    top: -8px;
+  }
+}
+
+.form__form-radio:checked + span:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: $baseBackColor;
+  z-index: 2;
+  left: -37px;
+  top: 1px;
 }
 
 .form__fields--slim label:last-child {
@@ -176,6 +203,14 @@
   font-weight: 400;
   line-height: 1.13;
   color: $labelColor;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.form__form-label sup {
+  top: inherit;
+  font-size: 100%;
 }
 
 @media (min-width: $widthTablet) {
@@ -206,7 +241,8 @@
   text-transform: uppercase;
   line-height: 1.13;
   color: $fontBaseColor;
-  margin-bottom: 14px;
+  margin-left: 16px;
+  flex-grow: 1;
 }
 
 .form__form-note {
