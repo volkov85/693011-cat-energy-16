@@ -73,12 +73,17 @@
 @media (min-width: $widthTablet) {
   .main__title--forms {
     @include widthTablets;
+    padding-top: 54px;
+    padding-left: 28px;
+    padding-bottom: 56px;
+    border: none;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .main__title--forms {
     width: 1327px;
-    padding-left: 113px;
+    padding-top: 72px;
+    padding-left: 108px;
   }
 }
