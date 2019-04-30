@@ -130,6 +130,22 @@
   }
 }
 
+.main-nav__toggle {
+  border: none;
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  outline: none;
+  background: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle--opened {
+  width: 25px;
+  background: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+}
+
 @media (min-width: $widthTablet) {
   .main-nav__toggle {
     display: none;
