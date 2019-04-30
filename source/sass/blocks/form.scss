@@ -44,8 +44,55 @@
 }
 
 .form__fields--contacts {
-  width: 300px;
-  padding-left: 20px;
+  width: 280px;
+  padding: 0 20px;
+}
+
+.form__fields--contacts .form__field-legend {
+  position: relative;
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 201px;
+    top: 42px;
+    width: 99px;
+    height: 3px;
+    background-color: $baseBackColor;
+  }
+}
+
+.form__fields--contacts .form__form-input {
+  margin-left: 12px;
+}
+
+.form__form-label[for=textfield-mail] {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 246px;
+    top: 16px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.form__form-label[for=textfield-phone] {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 246px;
+    top: 14px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-phone.svg");
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -69,6 +116,22 @@
 .form__fields--comment {
   width: 300px;
   padding-left: 20px;
+}
+
+.form__fields--comment .form__field-legend {
+  position: relative;
+  padding-top: 15px;
+  margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 142px;
+    top: 28px;
+    width: 158px;
+    height: 3px;
+    background-color: $baseBackColor;
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -103,9 +166,25 @@
 }
 
 .form__fields--more {
-  padding-bottom: 43px;
+  padding-bottom: 31px;
   width: 300px;
   padding-left: 20px;
+}
+
+.form__fields--more .form__field-legend {
+  position: relative;
+  padding-top: 18px;
+  margin-bottom: 41px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 164px;
+    top: 32px;
+    width: 136px;
+    height: 3px;
+    background-color: $baseBackColor;
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -120,15 +199,41 @@
   }
 }
 
-.form__fields--more label {
-  padding-bottom: 27px;
+.form__fields--more .form__form-label {
+  padding-bottom: 14px;
+  margin-bottom: 10px;
+  padding-left: 45px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 29px;
+    height: 29px;
+    border: solid 1px $togglerBorderColor;
+    background-color: $baseColor;
+    left: -1px;
+    top: -6px;
+  }
 }
 
-.form__fields--more label:last-child {
+.form__form-check:checked + span:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  background: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  z-index: 5;
+  left: 4px;
+  top: 1px;
+}
+
+.form__fields--more .form__form-label:last-child {
   padding-bottom: 0;
 }
 
-.form__fields--slim label {
+.form__fields--slim .form__form-label {
   padding-bottom: 24px;
   position: relative;
   cursor: pointer;
@@ -159,7 +264,7 @@
   top: 1px;
 }
 
-.form__fields--slim label:last-child {
+.form__fields--slim .form__form-label:last-child {
   padding-bottom: 0;
 }
 
@@ -250,9 +355,10 @@
   font-family: $fontBase;
   font-size: 16px;
   color: $fontBaseColor;
-  width: 280px;
+  width: 253px;
   border: solid 1px $baseBorderColor;
   resize: none;
+  padding: 13px 10px 10px 15px;
 }
 
 @media (min-width: $widthTablet) {

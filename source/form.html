@@ -71,11 +71,11 @@
           <fieldset class="form__fields form__fields--contacts" title="Владелец кота">
             <legend class="form__field-legend">Контактные данные (владельца кота)</legend>
             <div class="forms__wrapper-cont">
-              <label class="form__form-label">E-mail:<sup>*</sup>
-                <input class="form__form-input form__form-input--mail" type="text" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
+              <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
+                <input class="form__form-input" type="text" name="textfield" id="textfield-mail" value="kuklachev@gmail.com" placeholder="E-mail">
               </label>
-              <label class="form__form-label">Телефон:<sup>*</sup>
-                <input class="form__form-input form__form-input--phone" type="text" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
+              <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
+                <input class="form__form-input" type="text" name="textfield" id="textfield-phone" value="8 (960) 900-60-90" placeholder="Телефон">
               </label>
             </div>
           </fieldset>
@@ -87,16 +87,20 @@
             <legend class="form__field-legend">Дополнительно</legend>
             <div class="form__more-wrapper">
               <label class="form__form-label">
-                <input class="form__form-check" type="checkbox" checked>Сахарозаменитель
+                <input class="form__form-check visually-hidden" type="checkbox" checked>
+                <span>Сахарозаменитель</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-check" type="checkbox">Питьевая вода
+                <input class="form__form-check visually-hidden" type="checkbox">
+                <span>Питьевая вода</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-check" type="checkbox">Молоко
+                <input class="form__form-check visually-hidden" type="checkbox">
+                <span>Молоко</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-check" type="checkbox">Витамины
+                <input class="form__form-check visually-hidden" type="checkbox">
+                <span>Витамины</span>
               </label>
             </div>
           </fieldset>
