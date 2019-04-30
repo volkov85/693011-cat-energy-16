@@ -129,7 +129,7 @@
   }
 }
 
-.form__form-label[for=textfield-mail] {
+.form__form-label[for="textfield-mail"] {
   position: relative;
 
   &::after {
@@ -144,7 +144,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-label[for=textfield-mail] {
+  .form__form-label[for="textfield-mail"] {
     &::after {
       left: 592px;
       top: 20px;
@@ -153,14 +153,14 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .form__form-label[for=textfield-mail] {
+  .form__form-label[for="textfield-mail"] {
     &::after {
       left: 532px;
     }
   }
 }
 
-.form__form-label[for=textfield-phone] {
+.form__form-label[for="textfield-phone"] {
   position: relative;
 
   &::after {
@@ -175,7 +175,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-label[for=textfield-phone] {
+  .form__form-label[for="textfield-phone"] {
     &::after {
       left: 592px;
       top: 17px;
@@ -184,7 +184,7 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .form__form-label[for=textfield-phone] {
+  .form__form-label[for="textfield-phone"] {
     &::after {
       left: 531px;
     }
@@ -440,7 +440,7 @@
   }
 }
 
-.form__form-check:checked + span:after {
+.form__form-check:checked + span::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -453,7 +453,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-check:checked + span:after {
+  .form__form-check:checked + span::after {
     left: -4px;
     top: 3px;
   }
@@ -496,7 +496,7 @@
   }
 }
 
-.form__form-radio:checked + span:after {
+.form__form-radio:checked + span::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -509,7 +509,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-radio:checked + span:after {
+  .form__form-radio:checked + span::after {
     width: 18px;
     height: 18px;
     border-radius: 9px;
