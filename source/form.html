@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -19,9 +18,9 @@
         <a class="header__picture-desktop" href="#">
           <img src="img/logo-desktop.svg" alt="Логотип Кэт Энерджи" width="203" height="60">
         </a>
-        <a class="main-nav__toggle" href="#">
-          <img src="img/icon-mobile-menu.svg" alt="Открыть меню" width="25" height="19">
-        </a>
+        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -44,25 +43,28 @@
           <div class="forms__wrapper-desk">
             <fieldset class="form__fields form__fields--main" title="Анкета кота">
               <legend class="form__field-legend--main">Заполните анкету и мы подберем<br> программу питания для вашего кота</legend>
-              <label class="form__form-label" for="textfield-name">Имя:<sup>*</sup>
-                <input class="form__form-input" type="text" id="textfield-name" name="textfield" value="Барсик" placeholder="Имя">
+              <label class="form__form-label">Имя:<sup>*</sup>
+                <input class="form__form-input" type="text" name="textfield" value="Барсик" placeholder="Имя">
               </label>
-              <label class="form__form-label" for="textfield-weight">Вес (кг):<sup>*</sup>
-                <input class="form__form-input" type="text" id="textfield-weight" name="textfield" value="7" placeholder="Вес">
+              <label class="form__form-label">Вес (кг):<sup>*</sup>
+                <input class="form__form-input" type="text" name="textfield" value="7" placeholder="Вес">
               </label>
-              <label class="form__form-label" for="textfield-age">Возраст (лет):
-                <input class="form__form-input" type="text" id="textfield-age" name="textfield" value="7" placeholder="Возраст">
+              <label class="form__form-label">Возраст (лет):
+                <input class="form__form-input" type="text" name="textfield" value="7" placeholder="Возраст">
               </label>
             </fieldset>
             <fieldset class="form__fields form__fields--slim" title="Выбор программы">
               <label class="form__form-label">
-                <input class="form__form-radio" type="radio" name="radio" checked>Похудение
+                <input class="form__form-radio visually-hidden" type="radio" name="radio" checked>
+                <span>Похудение</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-radio" type="radio" name="radio">Набор массы
+                <input class="form__form-radio visually-hidden" type="radio" name="radio">
+                <span>Набор массы</span>
               </label>
               <label class="form__form-label">
-                <input class="form__form-radio" type="radio" name="radio">Не знаю (Нужен ваш совет)
+                <input class="form__form-radio visually-hidden" type="radio" name="radio">
+                <span>Не знаю (Нужен ваш совет)</span>
               </label>
             </fieldset>
           </div>
@@ -70,10 +72,10 @@
             <legend class="form__field-legend">Контактные данные (владельца кота)</legend>
             <div class="forms__wrapper-cont">
               <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
-                <input class="form__form-input form__form-input--mail" type="text" id="textfield-mail" name="textfield" value="kuklachev@gmail.com" placeholder="E-mail">
+                <input class="form__form-input" type="text" name="textfield" id="textfield-mail" value="kuklachev@gmail.com" placeholder="E-mail">
               </label>
               <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
-                <input class="form__form-input form__form-input--phone" type="text" id="textfield-phone" name="textfield" value="8 (960) 900-60-90" placeholder="Телефон">
+                <input class="form__form-input" type="text" name="textfield" id="textfield-phone" value="8 (960) 900-60-90" placeholder="Телефон">
               </label>
             </div>
           </fieldset>
@@ -84,17 +86,21 @@
           <fieldset class="form__fields form__fields--more" title="Дополнительно">
             <legend class="form__field-legend">Дополнительно</legend>
             <div class="form__more-wrapper">
-              <label class="form__form-label" for="check-sugar">
-                <input class="form__form-check" id="check-sugar" type="checkbox" checked>Сахарозаменитель
+              <label class="form__form-label">
+                <input class="form__form-check visually-hidden" type="checkbox" checked>
+                <span>Сахарозаменитель</span>
               </label>
-              <label class="form__form-label" for="check-water">
-                <input class="form__form-check" id="check-water" type="checkbox">Питьевая вода
+              <label class="form__form-label">
+                <input class="form__form-check visually-hidden" type="checkbox">
+                <span>Питьевая вода</span>
               </label>
-              <label class="form__form-label" for="check-milk">
-                <input class="form__form-check" id="check-milk" type="checkbox">Молоко
+              <label class="form__form-label">
+                <input class="form__form-check visually-hidden" type="checkbox">
+                <span>Молоко</span>
               </label>
-              <label class="form__form-label" for="check-vitamins">
-                <input class="form__form-check" id="check-vitamins" type="checkbox">Витамины
+              <label class="form__form-label">
+                <input class="form__form-check visually-hidden" type="checkbox">
+                <span>Витамины</span>
               </label>
             </div>
           </fieldset>
@@ -106,8 +112,11 @@
       </section>
       <section class="address address--cat">
         <div class="address__wrapper address__wrapper--cat">
-          <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="address__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <div class="address__loc-wrapper">
+            <p class="address__location">ул. Большая Конюшенная, д. 19/8</p>
+            <span class="address__location">Санкт-Петербург</span>
+          </div>
         </div>
         <div class="address__map">
           <span class="visually-hidden">Карта проезда</span>

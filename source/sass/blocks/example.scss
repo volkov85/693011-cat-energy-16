@@ -3,15 +3,16 @@
   margin: auto;
   background-color: $secondaryBackColor;
   padding-top: 30px;
+  padding-bottom: 38px;
 }
 
 @media (min-width: $widthTablet) {
   .example {
-    padding-top: 45px;
+    padding-top: 44px;
+    padding-bottom: 0;
     border-left: 30px;
-    width: 708px;
-    height: 1032px;
-    background: linear-gradient($baseColor 50%, $secondaryBackColor 50% 50%);
+    width: 768px;
+    background: none;
   }
 }
 
@@ -19,9 +20,25 @@
   .example {
     width: 1220px;
     height: 558px;
-    padding: 34px 110px 40px;
-    background: linear-gradient($baseColor 20%, $secondaryBackColor 20% 70%);
+    padding: 0 110px 97px;
+    background: linear-gradient(to bottom, $baseColor 29.5%, transparent 29.5% 70.5%),
+      linear-gradient(to right, $secondaryBackColor 72.5%, #eaeaea 72.5% 27.5%);
     display: flex;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .example_wrapper-desk {
+    width: 708px;
+    padding: 0 30px;
+    margin-bottom: 49px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example_wrapper-desk {
+    padding: 0;
+    padding-top: 58px;
   }
 }
 
@@ -38,7 +55,14 @@
     font-size: 60px;
     line-height: 1;
     padding: 0;
-    padding-bottom: 60px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__title {
+    margin: 80px 0;
+    margin-top: 0;
   }
 }
 
@@ -56,12 +80,18 @@
 @media (min-width: $widthTablet) {
   .example__description {
     width: 680px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 0;
+    padding-bottom: 17px;
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .example__description {
-    width: 440px;
+    width: 439px;
+    margin-bottom: 48px;
   }
 }
 
@@ -69,7 +99,9 @@
   .example_wrapper-tabl {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 18px 0;
+    align-items: center;
+    min-height: 84px;
   }
 }
 
@@ -78,7 +110,8 @@
     width: 430px;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding-top: 22px;
+    align-items: flex-start;
   }
 }
 
@@ -98,8 +131,26 @@
   }
 }
 
+@media (min-width: $widthTablet) {
+  .example_wrapper {
+    width: 160px;
+
+    &::before {
+      bottom: 6px;
+      width: 160px;
+      height: 70px;
+    }
+  }
+}
+
 .example_wrapper:first-child {
   margin-right: 32px;
+}
+
+@media (min-width: $widthTablet) {
+  .example_wrapper:first-child {
+    margin-right: 44px;
+  }
 }
 
 .example__result {
@@ -107,6 +158,19 @@
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: $widthTablet) {
+  .example__result {
+    width: 370px;
+    justify-content: initial;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__result {
+    margin-bottom: 50px;
+  }
 }
 
 .example__definition {
@@ -133,8 +197,21 @@
 
 @media (min-width: $widthTablet) {
   .example__definition {
+    font-size: 14px;
+    width: 130px;
+
     &::after {
+      width: 142px;
+      bottom: -10px;
+      left: -5px;
       background-color: $baseColor;
+    }
+  }
+
+  .example__definition--slim {
+    &::after {
+      width: 114px;
+      left: 8px;
     }
   }
 }
@@ -156,21 +233,52 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $widthTablet) {
+  .example__value {
+    font-size: 30px;
+    padding-bottom: 14px;
+  }
+}
+
 .example__total-cost {
   text-transform: uppercase;
-  display: block;
   text-align: center;
-  padding-top: 21px;
+  padding-top: 18px;
   padding-bottom: 41px;
 }
 
-.example__slider {
-  padding-bottom: 37px;
+@media (min-width: $widthTablet) {
+  .example__total-cost {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 180px;
+    text-align: right;
+    padding-top: 18px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__total-cost {
+    width: 326px;
+    text-align: left;
+  }
+}
+
+
+@media (min-width: $widthTablet) {
+  .example__slider {
+    width: 768px;
+    background: linear-gradient(to bottom, $baseColor 27%, transparent 27%, transparent 73%),
+      linear-gradient(to left, #eaeaea 50%, $secondaryBackColor 50% 50%),
+      linear-gradient($baseColor 50%, $secondaryBackColor 50% 50%);
+  }
 }
 
 @media (min-width: $widthDesktop) {
   .example__slider {
-    width: 700px;
+    width: 768px;
+    padding-left: 83px;
+    background: none;
   }
 }
 
@@ -179,7 +287,69 @@
   background-image: url("../img/before-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
+}
+
+@media (min-width: $widthTablet) {
+  .example__cat {
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    position: relative;
+    margin-bottom: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 170px;
+      top: 545px;
+      width: 428px;
+      height: 6px;
+      border-radius: 2.5px;
+      background-color: #dcdcdc;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__cat {
+    width: 768px;
+
+    &::before {
+      left: 200px;
+      top: 567px;
+    }
+  }
+}
+
+.example__cat--fat {
+  width: 50%;
+  height: 517px;
+  background: url("../img/before-desktop@1x.png") no-repeat -16% center;
+}
+
+.example__cat--slim {
+  width: 50%;
+  height: 517px;
+  background: url("../img/after-desktop@1x.png") no-repeat 110% center;
+}
+
+
+@media (min-width: $widthDesktop) {
+  .example__cat--fat {
+    width: 57.2%;
+    height: 517px;
+    background: url("../img/before-desktop@1x.png") no-repeat -16% center;
+  }
+
+  .example__cat--slim {
+    width: 50%;
+    height: 517px;
+    background: url("../img/after-desktop@1x.png") no-repeat 110% center;
+  }
 }
 
 .example__toggle {
@@ -199,6 +369,7 @@
     border-radius: 6px;
     border: solid 1px $togglerBorderColor;
     background-color: $baseColor;
+    z-index: 3;
   }
 
   &::before {
@@ -210,10 +381,106 @@
     height: 6px;
     border-radius: 3px;
     background-color: $baseBackColor;
-    z-index: 1;
+    z-index: 4;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .example__toggle {
+    font-size: 20px;
+    margin: 0;
+    padding: 0 100px 72px;
+
+    &::after {
+      left: 368px;
+      top: -5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      border: solid 1px $togglerBorderColor;
+    }
+
+    &::before {
+      left: 380px;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: $baseBackColor;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__toggle {
+    padding: 20px 100px 72px 129px;
+
+    &::after {
+      left: 396px;
+      top: 14px;
+    }
+
+    &::before {
+      left: 408px;
+      top: 27px;
+    }
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .example__toggler {
+    border-bottom: dotted 1px $togglerBorderColor;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__toggler {
+    padding-bottom: 5px;
   }
 }
 
 .example__toggler:first-child {
-  margin-right: 120px;
+  margin-right: 119px;
+}
+
+@media (min-width: $widthTablet) {
+  .example__toggler:first-child {
+    margin-right: 473px;
+  }
+}
+
+.example__cost-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $widthTablet) {
+  .example__cost-wrapper {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__cost-wrapper {
+    flex-direction: row;
+  }
+}
+
+.example__total-cost:first-child {
+  margin-right: 2px;
+}
+
+@media (min-width: $widthTablet) {
+  .example__total-cost {
+    padding: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .example__total-cost:first-child {
+    margin-right: 63px;
+    width: 174px;
+  }
 }

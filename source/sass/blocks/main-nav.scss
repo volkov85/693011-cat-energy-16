@@ -6,7 +6,7 @@
 @media (min-width: $widthTablet) {
   .main-nav {
     display: block;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -28,8 +28,8 @@
     &::after {
       content: "";
       position: absolute;
-      left: 88px;
-      bottom: -588px;
+      left: 89px;
+      bottom: -587px;
       width: 720px;
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -95,6 +95,10 @@
   .main-nav__item--active {
     border-bottom: 2px solid $baseBackColor;
   }
+
+  .main-nav__item--active-main {
+    border-bottom: 2px solid $baseBackColor;
+  }
 }
 
 @media (min-width: $widthDesktop) {
@@ -118,8 +122,28 @@
   }
 
   .main-nav__item--active {
+    border-bottom: 2px solid $baseBackColor;
+  }
+
+  .main-nav__item--active-main {
     border-bottom: 2px solid $baseColor;
   }
+}
+
+.main-nav__toggle {
+  border: none;
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  outline: none;
+  background: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle--opened {
+  width: 25px;
+  background: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $widthTablet) {

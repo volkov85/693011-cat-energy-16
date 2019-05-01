@@ -20,8 +20,8 @@
 
 .main__title-wrapper {
   width: 100%;
-  padding-top: 31px;
-  padding-bottom: 32px;
+  padding-top: 27px;
+  padding-bottom: 40px;
   border-bottom: 1px solid $baseBorderColor;
   border-top: 1px solid $baseBorderColor;
 }
@@ -30,6 +30,13 @@
   .main__title-wrapper {
     border: 0;
     padding-bottom: 0;
+    padding-top: 55px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .main__title-wrapper {
+    padding-top: 73px;
   }
 }
 
@@ -37,19 +44,19 @@
   width: 280px;
   color: $linkColor;
   text-align: left;
-  padding-left: 20px;
 }
 
 @media (min-width: $widthTablet) {
   .main__title--catalog {
     @include widthTablets;
+    padding-left: 28px;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .main__title--catalog {
     width: 1327px;
-    padding-left: 113px;
+    padding-left: 110px;
   }
 }
 
@@ -58,20 +65,25 @@
   padding-left: 20px;
   text-align: left;
   color: $linkColor;
-  padding-top: 31px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 35px;
   border-top: 1px solid $baseBorderColor;
 }
 
 @media (min-width: $widthTablet) {
   .main__title--forms {
     @include widthTablets;
+    padding-top: 54px;
+    padding-left: 28px;
+    padding-bottom: 56px;
+    border: none;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .main__title--forms {
     width: 1327px;
-    padding-left: 113px;
+    padding-top: 72px;
+    padding-left: 108px;
   }
 }

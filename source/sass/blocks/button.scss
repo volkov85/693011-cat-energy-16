@@ -10,7 +10,7 @@
   width: 280px;
   font-size: $fontBaseSize;
   line-height: 1.29;
-  padding: 11px 0 11px;
+  padding: 11px 0;
   display: block;
   margin: auto;
 }
@@ -24,4 +24,10 @@
 .button--secondary {
   background-color: $secondaryBackColor;
   color: $fontBaseColor;
+}
+
+@media (min-width: $widthDesktop) {
+  .button--secondary {
+    width: 169px;
+  }
 }

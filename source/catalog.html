@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Каталог Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -19,9 +18,9 @@
         <a class="header__picture-desktop" href="#">
           <img src="img/logo-desktop.svg" alt="Логотип Кэт Энерджи" width="203" height="60">
         </a>
-        <a class="main-nav__toggle" href="#">
-          <img src="img/icon-mobile-menu.svg" alt="Открыть меню" width="25" height="19">
-        </a>
+        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -45,11 +44,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x">
+                <img src="img/chicken-small-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy PRO 500 г</h2>
+                <h3>Cat Energy PRO 500 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -72,11 +75,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x">
+                <img src="img/chicken-big-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy PRO 1000 г</h2>
+                <h3>Cat Energy PRO 1000 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -99,11 +106,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x">
+                <img src="img/fish-small-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy PRO 500 г</h2>
+                <h3>Cat Energy PRO 500 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -126,11 +137,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x">
+                <img src="img/fish-big-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy PRO 1000 г</h2>
+                <h3>Cat Energy PRO 1000 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -153,11 +168,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x">
+                <img src="img/buckwheat-small-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy Slim 500 г</h2>
+                <h3>Cat Energy Slim 500 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -180,11 +199,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x">
+                <img src="img/buckwheat-big-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy Slim 1000 г</h2>
+                <h3>Cat Energy Slim 1000 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -207,11 +230,15 @@
         <article class="products__item">
           <div class="products__wrapper">
             <a class="products__picture" href="#">
-              <img src="img/rice-small-mobile@1x.jpg" width="140" height="144" alt="Фото упаковки">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png 1x">
+                <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x">
+                <img src="img/rice-small-mobile@1x.jpg" alt="Фото упаковки">
+              </picture>
             </a>
             <div class="products__stats-wrapper">
               <a class="products__title" href="#">
-                <h2>Cat Energy Slim 500 г</h2>
+                <h3>Cat Energy Slim 500 г</h3>
               </a>
               <table class="products__stats">
                 <tr>
@@ -248,7 +275,7 @@
             <article class="products__item">
               <div class="products__wrapper">
                 <a class="products__title" href="#">
-                  <h2>Сахарозаменитель</h2>
+                  <h3>Сахарозаменитель</h3>
                 </a>
                 <table class="products__stats">
                   <tr>
@@ -262,7 +289,7 @@
             <article class="products__item">
               <div class="products__wrapper">
                 <a class="products__title" href="#">
-                  <h2>Питьевая вода</h2>
+                  <h3>Питьевая вода</h3>
                 </a>
                 <table class="products__stats">
                   <tr>
@@ -276,7 +303,7 @@
             <article class="products__item">
               <div class="products__wrapper">
                 <a class="products__title" href="#">
-                  <h2>Молоко</h2>
+                  <h3>Молоко</h3>
                 </a>
                 <table class="products__stats">
                   <tr>
@@ -290,7 +317,7 @@
             <article class="products__item">
               <div class="products__wrapper">
                 <a class="products__title" href="#">
-                  <h2>Витамины</h2>
+                  <h3>Витамины</h3>
                 </a>
                 <table class="products__stats">
                   <tr>
@@ -309,8 +336,11 @@
       </section>
       <section class="address address--cat">
         <div class="address__wrapper">
-          <p class="address__invite">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="address__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <div class="address__loc-wrapper">
+            <p class="address__location">ул. Большая Конюшенная, д. 19/8</p>
+            <span class="address__location">Санкт-Петербург</span>
+          </div>
         </div>
         <div class="address__map">
           <span class="visually-hidden">Карта проезда</span>

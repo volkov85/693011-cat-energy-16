@@ -1,6 +1,6 @@
 .offer {
   width: 100%;
-  background: url("../img/index-can-mobile@1x.png") no-repeat center 79%,
+  background: url("../img/index-can-mobile@1x.png") no-repeat center 80%,
     url("../img/index-background-mobile@1x.jpg") no-repeat top center,
     linear-gradient(#63a73a 63.5%, transparent 36.5%);
 }
@@ -9,8 +9,8 @@
   .offer {
     height: 810px;
     width: 650px;
-    padding-top: 55px;
-    padding-left: 118px;
+    padding-top: 54px;
+    padding-left: 119px;
     background: url("../img/index-can-tablet@1x.jpg") no-repeat 50% 100%;
     margin: auto;
   }
@@ -20,7 +20,7 @@
   .offer {
     height: 473px;
     width: 1247px;
-    padding-left: 190px;
+    padding-left: 188px;
     padding-top: 108px;
     background: url("../img/index-can-desktop@1x.png") no-repeat 63% 30%;
     margin: auto;
@@ -31,7 +31,8 @@
   color: $baseColor;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 22px;
+  margin-top: 21px;
+  line-height: 1;
 }
 
 @media (min-width: $widthTablet) {
@@ -41,19 +42,19 @@
     font-size: 20px;
     width: 290px;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 42px;
   }
 }
 
 .offer__wrapper {
   height: 276px;
-  padding-top: 29px;
-  margin-bottom: 135px;
+  padding-top: 27px;
+  margin-bottom: 137px;
 }
 
 @media (min-width: $widthTablet) {
   .offer__wrapper {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
     height: auto;
     padding: 0;
   }
@@ -68,6 +69,6 @@
 
 @media (min-width: $widthDesktop) {
   .offer__wrapper {
-    margin-bottom: 49px;
+    margin-bottom: 51px;
   }
 }

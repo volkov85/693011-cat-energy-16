@@ -8,7 +8,7 @@
   .specification {
     width: 738px;
     padding-left: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
     border-bottom: 1px solid $baseBorderColor;
     padding-bottom: 0;
   }
@@ -17,7 +17,7 @@
 @media (min-width: $widthDesktop) {
   .specification {
     width: 1220px;
-    padding: 34px 110px 40px;
+    padding: 37px 110px 16px;
     border: 0;
   }
 }
