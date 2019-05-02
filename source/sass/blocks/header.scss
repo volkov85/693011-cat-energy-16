@@ -1,4 +1,27 @@
 .header {
+  width: 100%;
+}
+
+@media (min-width: $widthDesktop) {
+  .header {
+    // background: linear-gradient(to right, $baseColor 50%, #64a83b 50% 50%);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 89px;
+      bottom: -587px;
+      width: 720px;
+      height: 696px;
+      background: url("../img/index-background-desktop@1x.jpg") /50%,
+        linear-gradient(to right, $baseColor 50%, #64a83b 50% 50%);
+      z-index: -1;
+    }
+  }
+}
+
+.header__big-wrapper {
   background-color: $baseColor;
   display: flex;
   flex-direction: column;
@@ -6,7 +29,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .header {
+  .header__big-wrapper {
     flex-direction: row;
     width: 739px;
     background-color: initial;
@@ -17,12 +40,13 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .header {
-    width: 1221px;
-    padding-left: 109px;
+  .header__big-wrapper {
+    width: 1220px;
+    padding-left: 0;
     padding-top: 53px;
-    padding-right: 110px;
+    padding-right: 0;
     justify-content: space-between;
+    margin: auto;
   }
 }
 
