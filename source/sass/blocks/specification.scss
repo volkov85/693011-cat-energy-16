@@ -17,7 +17,7 @@
 @media (min-width: $widthDesktop) {
   .specification {
     width: 1220px;
-    padding: 37px 110px 16px;
+    padding: 37px 40px 16px;
     border: 0;
   }
 }
@@ -212,5 +212,11 @@
     margin-top: 117px;
     font-size: 16px;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .specification__description {
+    width: 245px;
   }
 }

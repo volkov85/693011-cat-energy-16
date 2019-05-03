@@ -34,8 +34,9 @@
 @media (min-width: $widthDesktop) {
   .address__wrapper {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-107%, -53%);
     width: 410px;
     z-index: 100;
     background-color: $baseColor;
@@ -118,8 +119,9 @@
     height: 400px;
 
     &::after {
-      bottom: 146px;
-      right: 323px;
+      top: 50%;
+      left: 50%;
+      transform: translate(247%, -45%);
       width: 115px;
       height: 107px;
       background: url("../img/map-pin.png") no-repeat center center / 120px;

@@ -8,33 +8,35 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
-        <a class="header__picture-mobile" href="#">
-          <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="192" height="39">
-        </a>
-        <a class="header__picture-tablet" href="#">
-          <img src="img/logo-tablet.svg" alt="Логотип Кэт Энерджи" width="174" height="59">
-        </a>
-        <a class="header__picture-desktop" href="#">
-          <img src="img/logo-desktop.svg" alt="Логотип Кэт Энерджи" width="203" height="60">
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--opened" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="header__big-wrapper">
+        <div class="header__wrapper">
+          <a class="header__picture-mobile" href="#">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="192" height="39">
+          </a>
+          <a class="header__picture-tablet" href="#">
+            <img src="img/logo-tablet.svg" alt="Логотип Кэт Энерджи" width="174" height="59">
+          </a>
+          <a class="header__picture-desktop" href="#">
+            <img src="img/logo-desktop.svg" alt="Логотип Кэт Энерджи" width="203" height="60">
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
       <h1 class="main__title main__title--forms">Подбор программы</h1>
@@ -125,28 +127,30 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="text-logo" href="#">
-        <img src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
-      </a>
-      <div class="social">
-        <a class="social__item social__item--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы в Вконтакте</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" x="0px" y="0px" viewBox="0 0 22 12"><path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2     c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9     c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2     C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0     c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9     c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5     c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3     c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1     c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7     c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0     C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3     c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2     c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8     c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1     c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/></svg>
+      <div class="footer__big-wrapper">
+        <a class="text-logo" href="#">
+          <img src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
         </a>
-        <a class="social__item social__item--instagram" href="https://www.instagram.com/htmlacademy">
-          <span class="visually-hidden">Мы в Инстаграме</span>
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 16 16"><path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1   L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/><path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9   C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/><circle class="st0" cx="12.3" cy="3.7" r="0.9"/></svg>
-        </a>
-        <a class="social__item social__item--facebook" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">Мы в Фейсбуке</span>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="20" viewBox="34.789 -4.709 13.518 27.75" enable-background="new 34.789 -4.709 13.518 27.75" xml:space="preserve"><g><path d="M44.32,23.041h-6.816V10.137h-2.715V3.763h2.629c-0.202-2.887,0.298-5,1.519-6.444c1.039-1.229,2.583-1.911,4.588-2.026     l4.782-0.001v6.15h-3.755c-0.166,0.315-0.251,1.093-0.252,2.321h3.978v6.375H44.32V23.041z M39.004,21.541h3.816V8.637h3.957V5.263     h-3.953l-0.016-0.734c-0.044-2.04,0.002-3.784,1.007-4.46l0.19-0.127h2.801v-3.15h-3.239c-1.557,0.091-2.711,0.581-3.485,1.496     c-1.041,1.231-1.41,3.298-1.099,6.144l0.092,0.832h-2.786v3.375h2.715V21.541z"/></g></svg>
-        </a>
-      </div>
-      <div class="footer__wrapper">
-        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60"><path fill="#111111" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-        </a>
+        <div class="social">
+          <a class="social__item social__item--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" x="0px" y="0px" viewBox="0 0 22 12"><path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2     c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4l-1.4,0c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9     c0.3-0.3,0.8-0.4,1-0.4l3,0l0.1,0c0.1,0,0.4,0.1,0.7,0.3c0.3,0.2,0.4,0.5,0.5,0.6c0,0,0.5,1.1,1.1,2c1,1.5,1.4,1.9,1.5,2     C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4C6.9,0.9,7.4,0.5,7.8,0.3C8.3,0.1,9.1,0,10.1,0l0.5,0     c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0.4c0,0.3,0,0.8,0.1,1c0.2-0.1,0.6-0.5,1.5-1.9     c0.6-0.9,1-1.9,1.1-2.1l0,0c0.1-0.3,0.4-0.7,1.2-0.7l3.1,0c0,0,0.1,0,0.3,0c0.7,0,1.2,0.2,1.3,0.7c0.2,0.5,0.1,1.3-1.7,3.5     c-0.3,0.3-0.5,0.6-0.7,0.9C19,6,18.6,6.6,18.6,6.7c0,0.1,0.5,0.5,0.9,0.9c1.1,0.9,1.9,1.7,2.2,2.3c0.4,0.6,0.3,1,0.2,1.3     c-0.3,0.7-1.2,0.7-1.4,0.8l-2.8,0C17.7,12,17.6,12,17.6,12z M13.7,8.3c0.7,0,1.2,0.6,1.8,1.2c0.4,0.4,0.7,0.8,1.1,1     c0.5,0.3,1,0.3,1,0.3l0.1,0l2.8,0c0.1,0,0.3-0.1,0.4-0.1c0,0,0-0.1-0.1-0.1c-0.3-0.5-1-1.3-2-2.1c-0.9-0.7-1.3-1.1-1.4-1.7     c0-0.6,0.4-1.1,1.2-2.1c0.2-0.2,0.4-0.5,0.7-0.8c1.1-1.4,1.4-2,1.5-2.3c-0.1,0-0.5,0-0.5,0l-3.2,0c-0.1,0-0.2,0-0.2,0     C16.9,2,16.4,3.1,15.8,4c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1c0-0.1,0-0.2,0-0.3     c0-0.5,0-0.9,0-1.3c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1l-0.5,0c-0.5,0-1,0-1.4,0.1c0.1,0.1,0.1,0.1,0.2,0.2     c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3C8.4,6.4,8.3,6.5,8.1,6.5C7.5,6.5,6.8,5.8,5.6,4C5,2.9,4.5,1.8,4.5,1.8     c0,0,0-0.1-0.1-0.1c-0.1,0-0.2-0.1-0.2-0.1l-2.9,0c0,0,0,0-0.1,0c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2l1.4,0c0,0,0.2,0,0.2-0.1     c0,0,0,0,0-0.1c0-0.2,0-2,1.2-2.3C13.5,8.3,13.6,8.3,13.7,8.3z"/></svg>
+          </a>
+          <a class="social__item social__item--instagram" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Инстаграме</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 16 16"><path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1   L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z"/><path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1C4.9,6.3,6.3,4.9,8,4.9 M8,3.9   C5.7,3.9,3.9,5.7,3.9,8s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9L8,3.9z"/><circle class="st0" cx="12.3" cy="3.7" r="0.9"/></svg>
+          </a>
+          <a class="social__item social__item--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="20" viewBox="34.789 -4.709 13.518 27.75" enable-background="new 34.789 -4.709 13.518 27.75" xml:space="preserve"><g><path d="M44.32,23.041h-6.816V10.137h-2.715V3.763h2.629c-0.202-2.887,0.298-5,1.519-6.444c1.039-1.229,2.583-1.911,4.588-2.026     l4.782-0.001v6.15h-3.755c-0.166,0.315-0.251,1.093-0.252,2.321h3.978v6.375H44.32V23.041z M39.004,21.541h3.816V8.637h3.957V5.263     h-3.953l-0.016-0.734c-0.044-2.04,0.002-3.784,1.007-4.46l0.19-0.127h2.801v-3.15h-3.239c-1.557,0.091-2.711,0.581-3.485,1.496     c-1.041,1.231-1.41,3.298-1.099,6.144l0.092,0.832h-2.786v3.375h2.715V21.541z"/></g></svg>
+          </a>
+        </div>
+        <div class="footer__wrapper">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60"><path fill="#111111" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>
