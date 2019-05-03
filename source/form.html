@@ -42,7 +42,7 @@
       <h1 class="main__title main__title--forms">Подбор программы</h1>
       <section class="forms">
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="forms__wrapper-desk">
+          <div class="form__wrapper-desk">
             <fieldset class="form__fields form__fields--main" title="Анкета кота">
               <legend class="form__field-legend--main">Заполните анкету и мы подберем<br> программу питания для вашего кота</legend>
               <label class="form__form-label">Имя:<sup>*</sup>
@@ -70,17 +70,19 @@
               </label>
             </fieldset>
           </div>
-          <fieldset class="form__fields form__fields--contacts" title="Владелец кота">
-            <legend class="form__field-legend">Контактные данные (владельца кота)</legend>
-            <div class="forms__wrapper-cont">
-              <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
-                <input class="form__form-input" type="text" name="textfield" id="textfield-mail" value="kuklachev@gmail.com" placeholder="E-mail">
-              </label>
-              <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
-                <input class="form__form-input" type="text" name="textfield" id="textfield-phone" value="8 (960) 900-60-90" placeholder="Телефон">
-              </label>
-            </div>
-          </fieldset>
+          <div class="form__wrapper-owner">
+            <fieldset class="form__fields form__fields--contacts" title="Владелец кота">
+              <legend class="form__field-legend">Контактные данные (владельца кота)</legend>
+              <div class="form__wrapper-cont">
+                <label class="form__form-label" for="textfield-mail">E-mail:<sup>*</sup>
+                  <input class="form__form-input" type="text" name="textfield" id="textfield-mail" value="kuklachev@gmail.com" placeholder="E-mail">
+                </label>
+                <label class="form__form-label" for="textfield-phone">Телефон:<sup>*</sup>
+                  <input class="form__form-input" type="text" name="textfield" id="textfield-phone" value="8 (960) 900-60-90" placeholder="Телефон">
+                </label>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form__fields form__fields--comment" title="Комментарий">
             <legend class="form__field-legend">Комментарий</legend>
             <textarea class="form__form-note" id="textfield-note" name="textfield" rows="7">Расскажите обо всех повадках кота</textarea>
@@ -108,7 +110,7 @@
           </fieldset>
           <div class="form__notes-wrapper">
             <button class="button" type="submit">Отправить заявку</button>
-            <span class="forms__notes"><sup>*</sup> — Обязательные поля</span>
+            <span class="form__notes"><sup>*</sup> — Обязательные поля</span>
           </div>
         </form>
       </section>
