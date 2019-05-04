@@ -11,20 +11,14 @@
 }
 
 .more-goods__title {
+  width: 230px;
   font-size: 24px;
   font-weight: 400;
   margin-top: 27px;
   margin-bottom: 32px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 247px;
-  //   top: 15px;
-  //   width: 53px;
-  //   height: 3px;
-  //   background-color: $baseBackColor;
-  // }
+  background-color: $baseColor;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $widthTablet) {
@@ -32,15 +26,6 @@
     font-size: 36px;
     background-color: $baseColor;
     padding-left: 37px;
-
-    // &::after {
-    //   left: -30px;
-    //   top: 24px;
-    //   width: 768px;
-    //   height: 3px;
-    //   background-color: $baseBackColor;
-    //   z-index: -1;
-    // }
   }
 }
 
@@ -48,35 +33,45 @@
   .more-goods__title {
     margin-top: 12px;
     padding-left: 40px;
-
-    // &::after {
-    //   left: -72px;
-    //   top: 24px;
-    //   width: 1440px;
-    //   height: 3px;
-    //   background-color: $baseBackColor;
-    //   z-index: -1;
-    // }
   }
 }
 
 .more-goods__title-wrapper {
-  width: 280px;
-  border-bottom: 1px solid $baseBorderColor;
+  width: 100%;
   position: relative;
+
+  &::after {
+    top: 42px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $baseBackColor;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $widthTablet) {
   .more-goods__title-wrapper {
-    width: 708px;
-    border: 0;
+    width: 100%;
+    border: none;
+    position: relative;
+
+    &::after {
+      top: 50px;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: $baseBackColor;
+      z-index: -1;
+    }
   }
 }
 
 @media (min-width: $widthDesktop) {
   .more-goods__title-wrapper {
     width: 100%;
-    // margin-bottom: 10px;
     position: relative;
 
     &::after {
@@ -91,10 +86,22 @@
   }
 }
 
+.more-goods__desc-wrapper {
+  width: 320px;
+  margin: auto;
+}
+
+@media (min-width: $widthTablet) {
+  .more-goods__desc-wrapper {
+    width: 671px;
+    padding-right: 37px;
+    margin: auto;
+  }
+}
+
 @media (min-width: $widthDesktop) {
   .more-goods__desc-wrapper {
     width: 1260px;
-    // padding-left: 40px;
     padding-right: 40px;
     margin: auto;
   }
@@ -105,12 +112,8 @@
   padding-bottom: 17px;
 }
 
-.more-goods h2 {
-  width: 280px;
-}
-
 @media (min-width: $widthTablet) {
-  .more-goods h2 {
+  .more-goods__title {
     width: 370px;
   }
 }

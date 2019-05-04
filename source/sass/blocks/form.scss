@@ -26,6 +26,16 @@
   padding-bottom: 9px;
 }
 
+.form__wrapper-desk {
+  margin-bottom: 14px;
+}
+
+@media (min-width: $widthTablet) {
+  .form__wrapper-desk {
+    margin-bottom: 63px;
+  }
+}
+
 @media (min-width: $widthDesktop) {
   .form__wrapper-desk {
     display: flex;
@@ -70,42 +80,28 @@
 }
 
 .form__fields--contacts {
-  width: 280px;
-  padding: 0 20px;
+  width: 300px;
+  padding: 0;
+  padding-right: 20px;
+  margin: auto;
 }
 
 .form__fields--contacts .form__field-legend {
-  // position: relative;
+  width: 230px;
   margin-bottom: 32px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 201px;
-  //   top: 42px;
-  //   width: 99px;
-  //   height: 3px;
-  //   background-color: $baseBackColor;
-  // }
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $baseColor;
 }
 
 @media (min-width: $widthTablet) {
   .form__fields--contacts .form__field-legend {
     font-size: 36px;
     width: 588px;
-    padding-top: 77px;
+    padding-top: 15px;
     padding-left: 36px;
     background-color: $baseColor;
     margin-bottom: 75px;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   left: -33px;
-    //   top: 98px;
-    //   width: 768px;
-    //   z-index: -1;
-    // }
   }
 }
 
@@ -114,12 +110,6 @@
     padding-top: 50px;
     margin-bottom: 75px;
     padding-left: 40px;
-
-    // &::after {
-    //   // left: -72px;
-    //   top: 71px;
-    //   width: 100%;
-    // }
   }
 }
 
@@ -209,9 +199,11 @@
     width: 1260px;
     padding-left: 0;
     padding-right: 40px;
-    // margin-right: 0;
-    // margin-left: 0;
   }
+}
+
+.form__wrapper-cont {
+  padding-left: 20px;
 }
 
 @media (min-width: $widthTablet) {
@@ -238,24 +230,17 @@
 }
 
 .form__fields--comment {
-  width: 300px;
-  padding-left: 20px;
+  width: 320px;
+  margin: auto;
 }
 
 .form__fields--comment .form__field-legend {
-  position: relative;
   padding-top: 15px;
   margin-bottom: 35px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 142px;
-    top: 28px;
-    width: 158px;
-    height: 3px;
-    background-color: $baseBackColor;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $baseColor;
+  width: 160px;
 }
 
 @media (min-width: $widthTablet) {
@@ -266,26 +251,14 @@
     margin-bottom: 76px;
     padding-left: 36px;
     background-color: $baseColor;
-
-    &::after {
-      left: -33px;
-      top: 38px;
-      width: 768px;
-      z-index: -1;
-    }
   }
 }
 
 @media (min-width: $widthDesktop) {
   .form__fields--comment .form__field-legend {
-    padding-top: 47px;
+    padding-left: 40px;
+    padding-top: 50px;
     margin-bottom: 75px;
-
-    &::after {
-      left: -72px;
-      top: 69px;
-      width: 1440px;
-    }
   }
 }
 
@@ -299,8 +272,11 @@
 @media (min-width: $widthDesktop) {
   .form__fields--comment {
     @include widthDesktop;
-    width: 1307px;
-    padding-left: 10px;
+    margin: auto;
+    width: 1260px;
+    padding-left: 0;
+    padding-right: 40px;
+    padding-bottom: 12px;
   }
 }
 
@@ -331,24 +307,17 @@
 
 .form__fields--more {
   padding-bottom: 31px;
-  width: 300px;
-  padding-left: 20px;
+  width: 320px;
+  margin: auto;
 }
 
 .form__fields--more .form__field-legend {
-  position: relative;
-  padding-top: 18px;
+  padding-top: 15px;
   margin-bottom: 41px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 164px;
-    top: 32px;
-    width: 136px;
-    height: 3px;
-    background-color: $baseBackColor;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  width: 185px;
 }
 
 @media (min-width: $widthTablet) {
@@ -359,26 +328,14 @@
     margin-bottom: 67px;
     padding-left: 36px;
     background-color: $baseColor;
-
-    &::after {
-      left: -33px;
-      top: 38px;
-      width: 768px;
-      z-index: -1;
-    }
   }
 }
 
 @media (min-width: $widthDesktop) {
   .form__fields--more .form__field-legend {
-    padding-top: 55px;
+    padding-top: 50px;
     margin-bottom: 66px;
-
-    &::after {
-      left: -72px;
-      top: 78px;
-      width: 1440px;
-    }
+    padding-left: 40px;
   }
 }
 
@@ -392,7 +349,10 @@
 @media (min-width: $widthDesktop) {
   .form__fields--more {
     @include widthDesktop;
-    padding-left: 31px;
+    margin: auto;
+    width: 1260px;
+    padding-left: 0;
+    padding-right: 40px;
   }
 }
 
@@ -533,6 +493,7 @@
 .form__more-wrapper {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 
 @media (min-width: $widthTablet) {
@@ -546,7 +507,7 @@
 
 @media (min-width: $widthDesktop) {
   .form__more-wrapper {
-    width: 1220px;
+    width: 1210px;
   }
 }
 
@@ -555,7 +516,7 @@
   line-height: 1;
   width: 190px;
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 17px;
 }
 
 @media (min-width: $widthTablet) {
@@ -647,6 +608,7 @@
   border: solid 1px $baseBorderColor;
   resize: none;
   padding: 13px 10px 10px 15px;
+  margin-left: 20px;
 }
 
 @media (min-width: $widthTablet) {
@@ -661,7 +623,8 @@
 
 @media (min-width: $widthDesktop) {
   .form__form-note {
-    width: 1180px;
+    width: 1178px;
+    margin-left: 40px;
   }
 }
 
@@ -682,8 +645,8 @@
 
 @media (min-width: $widthDesktop) {
   .form__notes-wrapper {
-    width: 1327px;
-    padding-left: 113px;
+    width: 1260px;
+    padding-left: 40px;
   }
 }
 
@@ -692,6 +655,10 @@
     width: 568px;
     margin: 0;
   }
+}
+
+.form__notes-wrapper .button {
+  font-size: 16px;
 }
 
 @media (min-width: $widthTablet) {
@@ -711,15 +678,46 @@
   }
 }
 
-@media (min-width: $widthDesktop) {
-  .form__wrapper-owner {
+.form__wrapper-field {
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    height: 3px;
+    background-color: $baseBackColor;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .form__wrapper-field {
     width: 100%;
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      // left: 201px;
+      top: 38px;
+      width: 100%;
+      height: 3px;
+      background-color: $baseBackColor;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .form__wrapper-field {
+    width: 100%;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
       top: 71px;
       width: 100%;
       height: 3px;

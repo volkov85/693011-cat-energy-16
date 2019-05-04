@@ -3,7 +3,7 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .header--bgcat{
+  .header--bgcat {
     position: relative;
 
     &::after {
@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid $baseBorderColor;
 }
 
 @media (min-width: $widthTablet) {
@@ -34,6 +35,7 @@
     padding-left: 29px;
     padding-top: 24px;
     margin: auto;
+    border: none;
   }
 }
 
