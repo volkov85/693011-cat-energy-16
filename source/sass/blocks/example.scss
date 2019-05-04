@@ -22,7 +22,8 @@
     height: 558px;
     padding: 0 0 97px;
     background: linear-gradient(to bottom, $baseColor 29.5%, transparent 29.5% 70.5%),
-      linear-gradient(to right, $secondaryBackColor 70%, #eaeaea 70% 30%);
+      // $secondaryBackColor;
+      linear-gradient(to right, $secondaryBackColor 80%, #eaeaea 80% 20%);
     display: flex;
     justify-content: center;
   }
@@ -320,9 +321,10 @@
 @media (min-width: $widthDesktop) {
   .example__cat {
     width: auto;
+    margin-bottom: -1px;
 
     &::before {
-      left: 100px;
+      left: 110px;
       top: 567px;
     }
   }
@@ -343,15 +345,13 @@
 
 @media (min-width: $widthDesktop) {
   .example__cat--fat {
-    width: 50%;
-    height: 517px;
     background: url("../img/before-desktop@1x.png") no-repeat 10% center;
   }
 
   .example__cat--slim {
-    width: 50%;
-    height: 517px;
-    background: url("../img/after-desktop@1x.png") no-repeat 96% center;
+    background: url("../img/after-desktop@1x.png") no-repeat 100% center,
+      linear-gradient(to bottom, $baseColor 37%, transparent 37%, transparent 63%),
+      #eaeaea;
   }
 }
 
@@ -417,16 +417,17 @@
 
 @media (min-width: $widthDesktop) {
   .example__toggle {
-    padding: 20px 0 72px 40px;
+    padding: 38px 0 72px 40px;
+    background: linear-gradient(to right, $secondaryBackColor 50%, #eaeaea 50% 50%);
 
     &::after {
-      left: 296px;
-      top: 14px;
+      left: 310px;
+      top: 32px;
     }
 
     &::before {
-      left: 308px;
-      top: 27px;
+      left: 322px;
+      top: 45px;
     }
   }
 }
@@ -483,7 +484,7 @@
 
 @media (min-width: $widthDesktop) {
   .example__total-cost:first-child {
-    margin-right: 63px;
-    width: 174px;
+    margin-right: 57px;
+    width: 180px;
   }
 }
