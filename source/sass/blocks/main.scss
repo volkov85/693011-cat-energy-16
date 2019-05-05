@@ -55,8 +55,9 @@
 
 @media (min-width: $widthDesktop) {
   .main__title--catalog {
-    width: 1327px;
-    padding-left: 110px;
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -67,7 +68,6 @@
   color: $linkColor;
   padding-top: 28px;
   padding-bottom: 35px;
-  border-top: 1px solid $baseBorderColor;
 }
 
 @media (min-width: $widthTablet) {
@@ -82,8 +82,9 @@
 
 @media (min-width: $widthDesktop) {
   .main__title--forms {
-    width: 1327px;
+    width: 1220px;
     padding-top: 72px;
-    padding-left: 108px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

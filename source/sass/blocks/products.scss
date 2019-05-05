@@ -77,6 +77,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.products__item-wrapper .products__item:first-child {
+  border-top: 1px solid $baseBorderColor;
+}
+
 .products__item-wrapper {
   width: 280px;
   margin: auto;

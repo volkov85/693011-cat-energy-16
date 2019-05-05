@@ -1,5 +1,10 @@
 .footer {
   width: 100%;
+  background-color: $secondaryBackColor;
+}
+
+.footer__big-wrapper {
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -9,21 +14,26 @@
 }
 
 @media (min-width: $widthTablet) {
-  .footer {
+  .footer__big-wrapper {
+    width: 708px;
+    margin: 0 auto;
     flex-direction: row;
     padding-top: 55px;
     padding-bottom: 50px;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .footer {
-    margin: 0;
+  .footer__big-wrapper {
+    width: 1220px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    // padding-left: 80px;
-    // padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -42,13 +52,12 @@
     width: auto;
     padding: 0;
     justify-content: flex-end;
-    margin-right: 30px;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .footer__wrapper {
-    margin-right: 109px;
+    margin-right: 0;
   }
 }
 
