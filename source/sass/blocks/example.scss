@@ -288,10 +288,15 @@
 
 .example__cat {
   height: 230px;
-  background-image: url("../img/before-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: no-repeat center url("../img/before-mobile@1x.png");
   margin-bottom: 39px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .example__cat {
+    background: no-repeat center url("../img/before-mobile@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -333,15 +338,26 @@
 .example__cat--fat {
   width: 50%;
   height: 517px;
-  background: url("../img/before-desktop@1x.png") no-repeat -16% center;
+  background: url("../img/before-tablet@1x.png") no-repeat -16% center;
 }
 
 .example__cat--slim {
   width: 50%;
   height: 517px;
-  background: url("../img/after-desktop@1x.png") no-repeat 110% center;
+  background: url("../img/after-tablet@1x.png") no-repeat 110% center;
 }
 
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .example__cat--fat {
+    background: url("../img/before-tablet@2x.png") no-repeat -16% center;
+    background-size: 690px auto;
+  }
+
+  .example__cat--slim {
+    background: url("../img/after-tablet@2x.png") no-repeat 110% center;
+    background-size: 690px auto;
+  }
+}
 
 @media (min-width: $widthDesktop) {
   .example__cat--fat {
@@ -353,6 +369,20 @@
       linear-gradient(to bottom, $baseColor 37%, transparent 37%, transparent 63%),
       #eaeaea;
     margin-bottom: -1px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .example__cat--fat {
+      background: url("../img/before-desktop@2x.png") no-repeat 10% center;
+      background-size: 690px auto;
+    }
+
+    .example__cat--slim {
+      background: url("../img/after-desktop@2x.png") no-repeat 100% center,
+        linear-gradient(to bottom, $baseColor 37%, transparent 37%, transparent 63%),
+        #eaeaea;
+      background-size: 690px auto;
+    }
   }
 }
 
