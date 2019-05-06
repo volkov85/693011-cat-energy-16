@@ -14,6 +14,14 @@
   display: block;
   margin: auto;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #90c56e;
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -25,6 +33,14 @@
 .button--secondary {
   background-color: $secondaryBackColor;
   color: $fontBaseColor;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #bababa;
+  }
 }
 
 @media (min-width: $widthDesktop) {

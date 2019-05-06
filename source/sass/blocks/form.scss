@@ -125,63 +125,55 @@
 
 .form__form-label[for="textfield-mail"] {
   position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 246px;
-    top: 16px;
-    width: 18px;
-    height: 14px;
-    background-image: url("../img/icon-mail.svg");
+.form__form-label[for="textfield-mail"] svg {
+  position: absolute;
+  left: 246px;
+  top: 16px;
+
+  &:hover {
+    fill: $baseBackColor;
   }
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-label[for="textfield-mail"] {
-    &::after {
-      left: 592px;
-      top: 20px;
-    }
+  .form__form-label[for="textfield-mail"] svg {
+    left: 595px;
+    top: 18px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .form__form-label[for="textfield-mail"] {
-    &::after {
-      left: 532px;
-    }
+  .form__form-label[for="textfield-mail"] svg {
+    left: 535px;
   }
 }
 
 .form__form-label[for="textfield-phone"] {
   position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 246px;
-    top: 14px;
-    width: 21px;
-    height: 21px;
-    background-image: url("../img/icon-phone.svg");
+.form__form-label[for="textfield-phone"] svg {
+  position: absolute;
+  left: 246px;
+  top: 16px;
+
+  &:hover {
+    fill: $baseBackColor;
   }
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-label[for="textfield-phone"] {
-    &::after {
-      left: 592px;
-      top: 17px;
-    }
+  .form__form-label[for="textfield-phone"] svg {
+    left: 596px;
+    top: 15px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .form__form-label[for="textfield-phone"] {
-    &::after {
-      left: 531px;
-    }
+  .form__form-label[for="textfield-phone"] svg {
+    left: 536px;
   }
 }
 
@@ -361,6 +353,7 @@
   margin-bottom: 10px;
   padding-left: 45px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -372,6 +365,16 @@
     left: -1px;
     top: -6px;
   }
+}
+
+.form__fields--more .form__form-label:hover {
+  &::before {
+    border: solid 1px #bababa;
+  }
+}
+
+.form__fields--more .form__form-label:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $widthTablet) {
@@ -448,6 +451,16 @@
     left: -46px;
     top: -8px;
   }
+}
+
+.form__fields--slim .form__form-label:hover {
+  &::before {
+    border: solid 1px #bababa;
+  }
+}
+
+.form__fields--slim .form__form-label:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $widthTablet) {
@@ -581,7 +594,7 @@
 }
 
 .form__form-input {
-  border: solid 1px $baseBorderColor;
+  border: solid 1px #e7e7e7;
   font-family: $fontBase;
   box-sizing: border-box;
   padding: 14px;
@@ -591,6 +604,18 @@
   color: $fontBaseColor;
   margin-left: 16px;
   flex-grow: 1;
+
+  &:hover {
+    border: solid 1px $togglerBorderColor;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+  }
 }
 
 @media (min-width: $widthTablet) {

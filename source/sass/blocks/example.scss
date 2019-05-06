@@ -404,6 +404,7 @@
     border: solid 1px $togglerBorderColor;
     background-color: $baseColor;
     z-index: 3;
+    cursor: pointer;
   }
 
   &::before {
@@ -416,6 +417,7 @@
     border-radius: 3px;
     background-color: $baseBackColor;
     z-index: 4;
+    cursor: pointer;
   }
 }
 
@@ -446,6 +448,25 @@
   }
 }
 
+@media (min-width: $widthTablet) {
+  .example__toggle:hover {
+    &::after {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .example__toggle:active {
+    &::after {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px $baseBackColor;
+    }
+
+    &::before {
+      left: 323px;
+    }
+  }
+}
+
 @media (min-width: $widthDesktop) {
   .example__toggle {
     padding: 38px 0 72px 40px;
@@ -459,6 +480,21 @@
     &::before {
       left: 322px;
       top: 45px;
+    }
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .example__toggler {
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      border-bottom: solid 1px #999999;
+    }
+
+    &:active {
+      border-bottom: none;
     }
   }
 }

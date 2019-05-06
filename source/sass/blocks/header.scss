@@ -74,6 +74,16 @@
   }
 }
 
+.header__picture {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 @media (min-width: $widthTablet) {
   .header__picture img {
     width: 174px;

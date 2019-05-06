@@ -54,6 +54,14 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid $baseBorderColor;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $widthTablet) {
