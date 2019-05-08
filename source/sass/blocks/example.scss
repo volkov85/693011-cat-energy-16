@@ -286,21 +286,21 @@
   }
 }
 
-.example__cat {
+.example__cats {
   height: 230px;
   background: no-repeat center url("../img/before-mobile@1x.png");
   margin-bottom: 39px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .example__cat {
+  .example__cats {
     background: no-repeat center url("../img/before-mobile@2x.png");
     background-size: 320px auto;
   }
 }
 
 @media (min-width: $widthTablet) {
-  .example__cat {
+  .example__cats {
     height: 520px;
     display: flex;
     justify-content: center;
@@ -308,63 +308,46 @@
     background: none;
     position: relative;
     margin-bottom: 18px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 170px;
-      top: 545px;
-      width: 428px;
-      height: 6px;
-      border-radius: 2.5px;
-      background-color: #dcdcdc;
-      z-index: 1;
-    }
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .example__cat {
+  .example__cats {
     width: auto;
     margin-bottom: -1px;
-
-    &::before {
-      left: 110px;
-      top: 567px;
-    }
   }
 }
 
-.example__cat--fat {
+.example__cat-fat {
   width: 50%;
   height: 517px;
   background: url("../img/before-tablet@1x.png") no-repeat -16% center;
 }
 
-.example__cat--slim {
+.example__cat-slim {
   width: 50%;
   height: 517px;
   background: url("../img/after-tablet@1x.png") no-repeat 110% center;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .example__cat--fat {
+  .example__cat-fat {
     background: url("../img/before-tablet@2x.png") no-repeat -16% center;
     background-size: 690px auto;
   }
 
-  .example__cat--slim {
+  .example__cat-slim {
     background: url("../img/after-tablet@2x.png") no-repeat 110% center;
     background-size: 690px auto;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .example__cat--fat {
+  .example__cat-fat {
     background: url("../img/before-desktop@1x.png") no-repeat 10% center;
   }
 
-  .example__cat--slim {
+  .example__cat-slim {
     background: url("../img/after-desktop@1x.png") no-repeat 100% center,
       linear-gradient(to bottom, $baseColor 37%, transparent 37%, transparent 63%),
       #eaeaea;
@@ -372,12 +355,12 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .example__cat--fat {
+    .example__cat-fat {
       background: url("../img/before-desktop@2x.png") no-repeat 10% center;
       background-size: 690px auto;
     }
 
-    .example__cat--slim {
+    .example__cat-slim {
       background: url("../img/after-desktop@2x.png") no-repeat 100% center,
         linear-gradient(to bottom, $baseColor 37%, transparent 37%, transparent 63%),
         #eaeaea;
@@ -387,102 +370,90 @@
 }
 
 .example__toggle {
+  width: 200px;
   display: flex;
   text-transform: uppercase;
   font-size: 16px;
-  margin-left: 64px;
+  margin: auto;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 55px;
-    top: 2px;
-    width: 82px;
-    height: 12px;
-    border-radius: 6px;
-    border: solid 1px $togglerBorderColor;
-    background-color: $baseColor;
-    z-index: 3;
-    cursor: pointer;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 61px;
-    top: 6px;
-    width: 35px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: $baseBackColor;
-    z-index: 4;
-    cursor: pointer;
-  }
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: $widthTablet) {
   .example__toggle {
+    width: 569px;
     font-size: 20px;
     margin: 0;
     padding: 0 100px 72px;
-
-    &::after {
-      left: 368px;
-      top: -5px;
-      width: 30px;
-      height: 30px;
-      border-radius: 15px;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-      border: solid 1px $togglerBorderColor;
-    }
-
-    &::before {
-      left: 380px;
-      top: 7px;
-      width: 8px;
-      height: 8px;
-      border-radius: 4px;
-      background-color: $baseBackColor;
-    }
   }
 }
 
 @media (min-width: $widthTablet) {
-  .example__toggle:hover {
-    &::after {
-      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
-    }
+  .example__toggler-button:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .example__toggle:active {
-    &::after {
-      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-      border: solid 2px $baseBackColor;
-    }
-
-    &::before {
-      left: 323px;
-    }
+  .example__toggler-button:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    border: solid 2px $baseBackColor;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .example__toggle {
-    padding: 38px 0 72px 40px;
+    width: 570px;
+    padding: 38px 40px 72px;
     background: linear-gradient(to right, $secondaryBackColor 50%, #eaeaea 50% 50%);
-
-    &::after {
-      left: 310px;
-      top: 32px;
-    }
-
-    &::before {
-      left: 322px;
-      top: 45px;
-    }
   }
 }
+
+.example__toggler-slider {
+  width: 82px;
+  height: 12px;
+  border-radius: 6px;
+  border: solid 1px $togglerBorderColor;
+  background-color: $baseColor;
+  z-index: 3;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (min-width: $widthTablet) {
+  .example__toggler-slider {
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+}
+
+.example__toggler-button {
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $baseBackColor;
+  z-index: 4;
+  cursor: pointer;
+}
+
+@media (min-width: $widthTablet) {
+  .example__toggler-button {
+    left: 47%;
+    top: -14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background: radial-gradient($baseBackColor 20%, $baseColor 20% 100%);
+    border: solid 1px $togglerBorderColor;
+  }
+}
+
 
 @media (min-width: $widthTablet) {
   .example__toggler {
@@ -508,16 +479,6 @@
 @media (min-width: $widthDesktop) {
   .example__toggler {
     padding-bottom: 5px;
-  }
-}
-
-.example__toggler:first-child {
-  margin-right: 119px;
-}
-
-@media (min-width: $widthTablet) {
-  .example__toggler:first-child {
-    margin-right: 473px;
   }
 }
 

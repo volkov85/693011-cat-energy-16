@@ -97,3 +97,25 @@
     height: auto;
   }
 }
+
+.header__toggle {
+  border: none;
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  outline: none;
+  background: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+}
+
+.header__toggle--opened {
+  width: 25px;
+  background: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $widthTablet) {
+  .header__toggle {
+    display: none;
+  }
+}

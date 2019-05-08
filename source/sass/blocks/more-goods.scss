@@ -10,6 +10,21 @@
   }
 }
 
+@media (min-width: $widthTablet) {
+  .more-goods__wrapper-desk {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .more-goods__wrapper-desk {
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+}
+
 .more-goods__title {
   width: 230px;
   font-size: 24px;
@@ -26,6 +41,7 @@
     font-size: 36px;
     background-color: $baseColor;
     padding-left: 37px;
+    padding-right: 0;
   }
 }
 
@@ -53,9 +69,7 @@
 
 @media (min-width: $widthTablet) {
   .more-goods__title-wrapper {
-    width: 100%;
     border: none;
-    position: relative;
 
     &::after {
       top: 50px;
@@ -71,9 +85,6 @@
 
 @media (min-width: $widthDesktop) {
   .more-goods__title-wrapper {
-    width: 100%;
-    position: relative;
-
     &::after {
       top: 36px;
       content: "";
@@ -95,7 +106,6 @@
   .more-goods__desc-wrapper {
     width: 671px;
     padding-right: 37px;
-    margin: auto;
   }
 }
 
@@ -103,13 +113,7 @@
   .more-goods__desc-wrapper {
     width: 1260px;
     padding-right: 40px;
-    margin: auto;
   }
-}
-
-.more-goods .products__item {
-  width: 280px;
-  padding-bottom: 17px;
 }
 
 @media (min-width: $widthTablet) {
@@ -118,8 +122,19 @@
   }
 }
 
+.more-goods__item {
+  width: 280px;
+  border-top: 1px solid $baseBorderColor;
+  padding: 12px 0 17px;
+  margin: auto;
+}
+
+.more-goods__item:last-child {
+  border-bottom: 1px solid $baseBorderColor;
+}
+
 @media (min-width: $widthTablet) {
-  .more-goods .products__item {
+  .more-goods__item {
     width: 708px;
     margin: auto;
     background: $baseColor;
@@ -130,7 +145,7 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .more-goods .products__item {
+  .more-goods__item {
     padding-top: 15px;
     padding-bottom: 16px;
     width: 895px;
@@ -143,24 +158,34 @@
   }
 }
 
+.more-goods__field {
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.more-goods__value {
+  text-align: right;
+  word-wrap: break-word;
+}
+
 @media (min-width: $widthTablet) {
-  .more-goods .products__field {
+  .more-goods__field {
     border: none;
     text-align: right;
   }
 
-  .more-goods .products__value {
+  .more-goods__value {
     border: none;
     width: 92px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .more-goods .products__field {
+  .more-goods__field {
     text-align: left;
   }
 
-  .more-goods .products__value {
+  .more-goods__value {
     text-align: left;
     width: 65px;
   }
@@ -184,63 +209,84 @@
   }
 }
 
-.more-goods .products__stats {
+.more-goods__stats {
   font-size: 14px;
+  font-family: $fontSecondary;
+  text-align: left;
+  width: 100%;
+  table-layout: fixed;
+  color: #444444;
+  border-spacing: 0 2px;
 }
 
 @media (min-width: $widthTablet) {
-  .more-goods .products__stats {
+  .more-goods__stats {
     width: 353px;
     font-size: 16px;
+  }
+
+  .more-goods__stats tr {
+    height: 31px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .more-goods .products__stats {
+  .more-goods__stats {
     width: 311px;
+    padding-top: 5px;
   }
 }
 
-.products__item-wrapper h3 {
-  margin-top: 13px;
-  line-height: 1;
-}
-
-.more-goods .products__wrapper {
+.more-goods__wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   margin-bottom: 11px;
 }
 
 @media (min-width: $widthTablet) {
-  .more-goods .products__wrapper {
+  .more-goods__wrapper {
     align-items: center;
     margin-bottom: 20px;
+    flex-direction: row;
+    width: 633px;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .more-goods .products__wrapper {
+  .more-goods__wrapper {
     margin: 0;
-    justify-content: initial;
     margin-right: 13px;
   }
 }
 
-.more-goods h3 {
+.more-goods__name {
+  margin-bottom: 6px;
+}
+
+.more-goods__name h3 {
   width: 280px;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 
 @media (min-width: $widthTablet) {
-  .more-goods h3 {
-    text-align: left;
+  .more-goods__name h3 {
+    line-height: 1;
+    width: 135px;
     font-size: 20px;
-    font-weight: normal;
-    margin: 0;
+    text-align: left;
+    display: block;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .more-goods h3 {
+  .more-goods__name h3 {
     margin-right: 42px;
   }
 }

@@ -33,7 +33,7 @@
               <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт Энерджи">
             </picture>
           </a>
-          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+          <button class="header__toggle header__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -96,12 +96,12 @@
           <div class="example_wrapper-tabl">
             <dl class="example__result">
               <div class="example_wrapper">
-                <dd class="example__value">5 кг</dd>
-                <dt class="example__definition example__definition--slim">снижение веса</dt>
+                <dt class="example__value">5 кг</dt>
+                <dd class="example__definition example__definition--slim">снижение веса</dd>
               </div>
               <div class="example_wrapper">
-                <dd class="example__value">60 дней</dd>
-                <dt class="example__definition">затрачено времени</dt>
+                <dt class="example__value">60 дней</dt>
+                <dd class="example__definition">затрачено времени</dd>
               </div>
             </dl>
             <div class="example__cost-wrapper">
@@ -111,21 +111,25 @@
           </div>
         </div>
         <div class="example__slider">
-          <div class="example__cat">
-            <div class="example__cat--fat">
+          <div class="example__cats">
+            <div class="example__cat-fat">
               <span class="visually-hidden">Изображение кота</span>
             </div>
-            <div class="example__cat--slim">
+            <div class="example__cat-slim">
               <span class="visually-hidden">Изображение кота</span>
             </div>
           </div>
           <div class="example__toggle">
             <span class="example__toggler">было</span>
+            <div class="example__toggler-slider">
+              <div class="example__toggler-button"></div>
+            </div>
             <span class="example__toggler">стало</span>
           </div>
         </div>
       </section>
       <section class="address">
+        <h2 class="visually-hidden">Наш адрес</h2>
         <div class="address__wrapper">
           <p class="address__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <div class="address__loc-wrapper">
@@ -155,13 +159,13 @@
           </a>
           <a class="social__item social__item--facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg width="10" height="19"><use xlink:href="#icon-fb"></svg>
+            <svg width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
           </a>
         </div>
         <div class="footer__wrapper">
           <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="40" height="40"><use xlink:href="#icon-academy"></svg>
+            <svg width="40" height="40"><use xlink:href="#icon-academy"></use></svg>
           </a>
         </div>
       </div>

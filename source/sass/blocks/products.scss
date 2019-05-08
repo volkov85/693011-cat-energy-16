@@ -122,18 +122,6 @@
   }
 }
 
-.more-goods .products__wrapper {
-  flex-direction: column;
-}
-
-@media (min-width: $widthTablet) {
-  .more-goods .products__wrapper {
-    flex-direction: row;
-    width: 633px;
-    justify-content: space-between;
-  }
-}
-
 .products__picture {
   display: block;
   height: 144px;
