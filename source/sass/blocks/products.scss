@@ -35,7 +35,7 @@
     padding-bottom: 40px;
     border: 0;
     width: 324px;
-    background: linear-gradient(to bottom, $baseColor 16%, $secondaryBackColor 16% 70%);
+    background: linear-gradient(to bottom, $baseColor 0, $baseColor 16%, $secondaryBackColor 16%, $secondaryBackColor 100%);
     margin-top: 56px;
     display: flex;
     flex-direction: column;
