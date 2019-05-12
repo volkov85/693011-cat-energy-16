@@ -45,6 +45,10 @@
   font-size: 16px;
   padding-top: 12px;
   padding-bottom: 21px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -63,4 +67,10 @@
 
 .footer__copyright {
   font-family: $fontSecondary;
+}
+
+.footer__logo svg {
+  &:hover {
+    fill: $baseBackColor;
+  }
 }

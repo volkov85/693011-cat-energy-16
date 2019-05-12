@@ -35,7 +35,7 @@
     padding-bottom: 40px;
     border: 0;
     width: 324px;
-    background: linear-gradient(to bottom, $baseColor 16%, $secondaryBackColor 16% 70%);
+    background: linear-gradient(to bottom, $baseColor 0, $baseColor 16%, $secondaryBackColor 16%, $secondaryBackColor 100%);
     margin-top: 56px;
     display: flex;
     flex-direction: column;
@@ -118,18 +118,6 @@
   .products__wrapper-desk {
     display: flex;
     width: 1217px;
-    justify-content: space-between;
-  }
-}
-
-.more-goods .products__wrapper {
-  flex-direction: column;
-}
-
-@media (min-width: $widthTablet) {
-  .more-goods .products__wrapper {
-    flex-direction: row;
-    width: 633px;
     justify-content: space-between;
   }
 }

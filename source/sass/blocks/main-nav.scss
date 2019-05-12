@@ -54,6 +54,14 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-top: 1px solid $baseBorderColor;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $widthTablet) {
@@ -110,27 +118,5 @@
 
   .main-nav__item--active-main {
     border-bottom: 2px solid $baseColor;
-  }
-}
-
-.main-nav__toggle {
-  border: none;
-  cursor: pointer;
-  width: 19px;
-  height: 19px;
-  outline: none;
-  background: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-}
-
-.main-nav__toggle--opened {
-  width: 25px;
-  background: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-}
-
-@media (min-width: $widthTablet) {
-  .main-nav__toggle {
-    display: none;
   }
 }

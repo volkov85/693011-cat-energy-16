@@ -123,65 +123,78 @@
   }
 }
 
-.form__form-label[for="textfield-mail"] {
+.form__form-label {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.13;
+  color: $labelColor;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
   position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 246px;
-    top: 16px;
-    width: 18px;
-    height: 14px;
-    background-image: url("../img/icon-mail.svg");
+.form__form-label sup {
+  top: inherit;
+  font-size: 100%;
+}
+
+@media (min-width: $widthTablet) {
+  .form__form-label {
+    margin-bottom: 20px;
+    width: auto;
+    font-size: 20px;
+  }
+}
+
+.form__form-label--mail svg {
+  position: absolute;
+  left: 246px;
+  top: 16px;
+
+  &:hover {
+    fill: $baseBackColor;
   }
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-label[for="textfield-mail"] {
-    &::after {
-      left: 592px;
-      top: 20px;
-    }
+  .form__form-label--mail svg {
+    left: 595px;
+    top: 18px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .form__form-label[for="textfield-mail"] {
-    &::after {
-      left: 532px;
-    }
+  .form__form-label--mail svg {
+    left: 535px;
   }
 }
 
-.form__form-label[for="textfield-phone"] {
+.form__form-label--phone {
   position: relative;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 246px;
-    top: 14px;
-    width: 21px;
-    height: 21px;
-    background-image: url("../img/icon-phone.svg");
+.form__form-label--phone svg {
+  position: absolute;
+  left: 246px;
+  top: 16px;
+
+  &:hover {
+    fill: $baseBackColor;
   }
 }
 
 @media (min-width: $widthTablet) {
-  .form__form-label[for="textfield-phone"] {
-    &::after {
-      left: 592px;
-      top: 17px;
-    }
+  .form__form-label--phone svg {
+    left: 596px;
+    top: 15px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .form__form-label[for="textfield-phone"] {
-    &::after {
-      left: 531px;
-    }
+  .form__form-label--phone svg {
+    left: 536px;
   }
 }
 
@@ -356,11 +369,12 @@
   }
 }
 
-.form__fields--more .form__form-label {
+.form__form-label--more {
   padding-bottom: 14px;
   margin-bottom: 10px;
   padding-left: 45px;
   position: relative;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -374,8 +388,18 @@
   }
 }
 
+.form__form-label--more:hover {
+  &::before {
+    border: solid 1px #bababa;
+  }
+}
+
+.form__form-label--more:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $widthTablet) {
-  .form__fields--more .form__form-label {
+  .form__form-label--more {
     padding-bottom: 0;
     margin-bottom: 50px;
     margin-right: 0;
@@ -390,20 +414,20 @@
     }
   }
 
-  .form__fields--more .form__form-label:nth-child(odd) {
+  .form__form-label--more:nth-child(odd) {
     margin-right: 100px;
   }
 }
 
 @media (min-width: $widthDesktop) {
-  .form__fields--more .form__form-label {
+  .form__form-label--more {
     padding-bottom: 0;
     margin-bottom: 58px;
     margin-right: 100px;
     width: 180px;
   }
 
-  .form__fields--more .form__form-label:last-child {
+  .form__form-label--more:last-child {
     margin-right: 0;
   }
 }
@@ -427,7 +451,7 @@
   }
 }
 
-.form__fields--more .form__form-label:last-child {
+.form__form-label--more:last-child {
   padding-bottom: 0;
 }
 
@@ -448,6 +472,16 @@
     left: -46px;
     top: -8px;
   }
+}
+
+.form__fields--slim .form__form-label:hover {
+  &::before {
+    border: solid 1px #bababa;
+  }
+}
+
+.form__fields--slim .form__form-label:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $widthTablet) {
@@ -531,6 +565,8 @@
   line-height: 1.29;
   padding-bottom: 39px;
   text-transform: uppercase;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 @media (min-width: $widthTablet) {
@@ -539,30 +575,6 @@
     line-height: 1.5;
     width: 330px;
     padding-bottom: 66px;
-  }
-}
-
-.form__form-label {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.13;
-  color: $labelColor;
-  display: flex;
-  align-items: center;
-  margin-bottom: 11px;
-}
-
-.form__form-label sup {
-  top: inherit;
-  font-size: 100%;
-}
-
-@media (min-width: $widthTablet) {
-  .form__form-label {
-    margin-bottom: 20px;
-    width: auto;
-    font-size: 20px;
   }
 }
 
@@ -581,7 +593,7 @@
 }
 
 .form__form-input {
-  border: solid 1px $baseBorderColor;
+  border: solid 1px #e7e7e7;
   font-family: $fontBase;
   box-sizing: border-box;
   padding: 14px;
@@ -591,6 +603,18 @@
   color: $fontBaseColor;
   margin-left: 16px;
   flex-grow: 1;
+
+  &:hover {
+    border: solid 1px $togglerBorderColor;
+  }
+
+  &:active {
+    border: solid 1px #444444;
+  }
+
+  &:invalid {
+    border: solid 1px #ff8282;
+  }
 }
 
 @media (min-width: $widthTablet) {

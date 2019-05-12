@@ -22,6 +22,16 @@
   margin-left: 36px;
 }
 
+.social__item svg {
+  &:hover {
+    fill: $baseBackColor;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $widthTablet) {
   .social__item--instagram {
     margin-right: 32px;

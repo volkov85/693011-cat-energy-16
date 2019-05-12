@@ -1,12 +1,12 @@
 var nav = document.querySelector(".main-nav");
-var toggler = document.querySelector(".main-nav__toggle");
+var toggler = document.querySelector(".header__toggle");
 
 document.addEventListener("DOMContentLoaded", function() {
   nav.classList.remove("main-nav--show");
-  toggler.classList.add("main-nav__toggle--opened");
+  toggler.classList.add("header__toggle--opened");
 });
 
 toggler.addEventListener("click", function (evt) {
   nav.classList.toggle("main-nav--show");
-  toggler.classList.toggle("main-nav__toggle--opened");
+  toggler.classList.toggle("header__toggle--opened");
 });
