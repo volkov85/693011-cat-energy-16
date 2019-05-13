@@ -95,9 +95,15 @@
     width: 124px;
     height: 100px;
     background: url("../img/map-pin.png") no-repeat center center / 62px;
+    z-index: 1;
   }
 }
 
+.address__map iframe {
+  border: none;
+  width: 100%;
+  z-index: 2;
+}
 
 @media (min-width: $widthTablet) {
   .address__map {

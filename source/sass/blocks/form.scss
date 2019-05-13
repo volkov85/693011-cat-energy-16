@@ -28,11 +28,13 @@
 
 .form__wrapper-desk {
   margin-bottom: 14px;
+  width: 322px;
 }
 
 @media (min-width: $widthTablet) {
   .form__wrapper-desk {
     margin-bottom: 63px;
+    width: auto;
   }
 }
 
@@ -148,14 +150,18 @@
   }
 }
 
+.form__form-input:focus + svg {
+  fill: $baseBackColor;
+}
+
+.form__form-input:invalid + svg {
+  fill: #ff8282;
+}
+
 .form__form-label--mail svg {
   position: absolute;
   left: 246px;
   top: 16px;
-
-  &:hover {
-    fill: $baseBackColor;
-  }
 }
 
 @media (min-width: $widthTablet) {
@@ -179,10 +185,6 @@
   position: absolute;
   left: 246px;
   top: 16px;
-
-  &:hover {
-    fill: $baseBackColor;
-  }
 }
 
 @media (min-width: $widthTablet) {
@@ -312,6 +314,7 @@
 @media (min-width: $widthDesktop) {
   .form__fields--slim {
     width: 462px;
+    height: 129px;
     margin: 0;
     margin-top: 126px;
     margin-bottom: 20px;
@@ -432,6 +435,10 @@
   }
 }
 
+.form__form-check:focus + span {
+  font-weight: 600;
+}
+
 .form__form-check:checked + span::after {
   content: "";
   position: absolute;
@@ -520,6 +527,10 @@
   }
 }
 
+.form__form-radio:focus + span {
+  font-weight: 600;
+}
+
 .form__fields--slim .form__form-label:last-child {
   padding-bottom: 0;
 }
@@ -603,23 +614,29 @@
   color: $fontBaseColor;
   margin-left: 16px;
   flex-grow: 1;
+  outline: none;
 
   &:hover {
     border: solid 1px $togglerBorderColor;
   }
 
-  &:active {
-    border: solid 1px #444444;
+  &:focus {
+    border: solid 2px #444444;
   }
 
   &:invalid {
-    border: solid 1px #ff8282;
+    border: solid 2px #ff8282;
   }
 }
 
 @media (min-width: $widthTablet) {
   .form__form-input {
     font-size: 20px;
+    height: 52px;
+  }
+
+  .form__form-input::placeholder {
+    line-height: 1.13;
   }
 }
 
