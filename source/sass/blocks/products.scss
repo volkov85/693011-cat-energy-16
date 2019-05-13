@@ -11,6 +11,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 38px;
+    justify-content: space-between;
+    margin-top: 29px;
   }
 }
 
@@ -19,7 +21,7 @@
     padding-top: 82px;
     padding-bottom: 0;
     width: 1217px;
-    justify-content: space-between;
+    margin-top: 0;
   }
 }
 
@@ -42,11 +44,11 @@
   }
 
   .products__item:nth-child(-n+2) {
-    margin-top: 83px;
+    margin-top: 56px;
   }
 
   .products__item:nth-child(odd) {
-    margin-right: 60px;
+    margin-right: 0;
   }
 }
 
@@ -55,10 +57,6 @@
     width: 245px;
     margin-top: 0;
     margin-bottom: 60px;
-  }
-
-  .products__item:nth-child(odd) {
-    margin-right: 0;
   }
 
   .products__item:nth-child(-n+2) {
@@ -185,6 +183,7 @@
 
   .products__stats .products__field {
     border-bottom: 1px solid $baseBorderColor;
+    text-align: left;
   }
 }
 
