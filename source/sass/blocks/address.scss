@@ -88,15 +88,15 @@
   background: $secondaryBackColor url("../img/bg-map-mobile@1x.png") no-repeat center center / cover;
   height: 362px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 147px;
-    width: 124px;
-    height: 100px;
-    background: url("../img/map-pin.png") no-repeat center center / 62px;
-    z-index: 1;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 147px;
+  //   width: 124px;
+  //   height: 100px;
+  //   background: url("../img/map-pin.png") no-repeat center center / 62px;
+  //   z-index: 1;
+  // }
 }
 
 .address__map iframe {
@@ -110,12 +110,12 @@
     background: $secondaryBackColor url("../img/bg-map-tablet@1x.png") no-repeat center center / cover;
     height: 400px;
 
-    &::after {
-      bottom: 140px;
-      width: 115px;
-      height: 107px;
-      background: url("../img/map-pin.png") no-repeat center center / 120px;
-    }
+    // &::after {
+    //   bottom: 140px;
+    //   width: 115px;
+    //   height: 107px;
+    //   background: url("../img/map-pin.png") no-repeat center center / 120px;
+    // }
   }
 }
 
@@ -124,14 +124,14 @@
     background: $secondaryBackColor url("../img/bg-map-desktop@1x.png") no-repeat center center / cover;
     height: 400px;
 
-    &::after {
-      top: 50%;
-      left: 50%;
-      transform: translate(247%, -45%);
-      width: 115px;
-      height: 107px;
-      background: url("../img/map-pin.png") no-repeat center center / 120px;
-    }
+    // &::after {
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(247%, -45%);
+    //   width: 115px;
+    //   height: 107px;
+    //   background: url("../img/map-pin.png") no-repeat center center / 120px;
+    // }
   }
 }
 
